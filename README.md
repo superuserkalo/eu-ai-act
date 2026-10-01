@@ -75,6 +75,20 @@ clients. The skill itself needs no runtime dependencies.
 python3 -m unittest discover -s tests -v
 ```
 
+## Evals
+
+`evals/` holds scenario tests. Each case in `evals/cases/` goes to a fresh
+agent that has only the skill, with no web access and no view of the answer
+key (`evals/expected.json`). Reports land in `evals/runs/<date>/` and are
+graded against the key. The first run on 2026-10-01 passed all 8 cases:
+
+![Eval results: 8 of 8 cases pass, covering a support chatbot, image generator, CV screening, credit scoring, workplace emotion recognition, an internal summarizer, an open-weight fine-tune, and a system with no EU link](assets/eval-results.png)
+
+For case 06 the agent was right and the answer key was wrong: Article 50(2)
+marking also applies to internal tools. The key is corrected. See
+[`evals/README.md`](evals/README.md) for per-case notes, untested areas, and
+how to rerun.
+
 ## Staying current
 
 A GitHub Action (`.github/workflows/check-updates.yml`) runs every Monday and
