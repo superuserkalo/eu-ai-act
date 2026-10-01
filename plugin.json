@@ -1,0 +1,8 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "eu-ai-act",
+  "version": "0.1.0",
+  "description": "Classify AI features under the EU AI Act as amended in 2026 and build the required controls into code, tests, and docs.",
+  "repository": "https://github.com/superuserkalo/eu-ai-act",
+  "keywords": ["agent-skills", "eu-ai-act", "compliance", "regulation", "ai-governance"]
+}

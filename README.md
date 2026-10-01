@@ -22,6 +22,8 @@ Engineering guidance, not legal advice.
 
 ## Layout
 
+The installable skill is `skills/eu-ai-act/`:
+
 - `SKILL.md`: workflow and rules.
 - `references/catalog.md`: questions to Articles.
 - `references/builder-playbook.md`: obligations to engineering controls.
@@ -30,19 +32,39 @@ Engineering guidance, not legal advice.
 - `references/articles/NNN.md`, `annexes/<roman>.md`, `recitals/NNN.md`:
   official text, one item per file. Files changed in 2026 open with the
   amending text quoted verbatim, then the 2024 text.
-- `scripts/convert.py`: regenerates the text from the Publications Office.
 - `SOURCE.json`: source documents and per-file hashes.
 - `tracking.json`: acts already bundled or reviewed, and the guidance watch list.
+
+Maintenance lives at the repository root: `scripts/` (convert, hash, check
+for updates), `tests/`, and the weekly update workflow.
 
 One Article costs roughly 0.5k to 5k tokens to load.
 
 ## Install
 
-Clone into a skills directory your agent reads, for example:
+1. **With the [Skills CLI](https://github.com/vercel-labs/skills):**
 
-```sh
-git clone https://github.com/superuserkalo/eu-ai-act ~/.claude/skills/eu-ai-act
-```
+   ```sh
+   npx skills add superuserkalo/eu-ai-act --skill eu-ai-act
+   ```
+
+2. **Copy the complete skill directory into your agent's skill root:**
+
+   ```sh
+   git clone https://github.com/superuserkalo/eu-ai-act.git
+   mkdir -p ~/.agents/skills
+   cp -R eu-ai-act/skills/eu-ai-act ~/.agents/skills/
+   ```
+
+   `~/.agents/skills` is an example shared skill root. Use your client's supported
+   location if it differs, such as `~/.claude/skills` for Claude Code. Keep the
+   `references/` directory alongside `SKILL.md`.
+
+Or simply tell your agent to install the skill from
+[this GitHub repository](https://github.com/superuserkalo/eu-ai-act).
+
+The repository also includes a root `plugin.json` for Agent Plugins-compatible
+clients. The skill itself needs no runtime dependencies.
 
 ## Verify
 
@@ -69,19 +91,20 @@ To bundle a new amending act or English correction:
 ```sh
 curl -sL -H "Accept: application/xhtml+xml" -H "Accept-Language: eng" \
   https://publications.europa.eu/resource/celex/<CELEX> > new.xhtml
-python3 scripts/convert.py act.xhtml references omnibus.xhtml new.xhtml  # oldest first
+python3 scripts/convert.py act.xhtml skills/eu-ai-act/references omnibus.xhtml new.xhtml  # oldest first
 python3 scripts/hash_sources.py
 python3 -m unittest discover -s tests -v
 ```
 
 Then update `references/timeline.md` and the playbook if dates or duties
-changed, add the act to `bundled` in `tracking.json` and to `documents` in
-`SOURCE.json`, and commit. For anything that needs no text change, add it to
+changed, add the act to `bundled` in `skills/eu-ai-act/tracking.json` and to
+`documents` in `skills/eu-ai-act/SOURCE.json`, and commit. For anything that needs no text change, add it to
 `reviewed` with a one-line reason. After reviewing a watched page, set its
 `last_reviewed` date.
 
 ## Sources and reuse
 
-EU legal text © European Union, https://eur-lex.europa.eu/, reused under
-Commission Decision 2011/833/EU. Only the Official Journal is authentic. See
-`NOTICE.md`.
+Project-authored files are MIT licensed (see `LICENSE`). EU legal text
+© European Union, https://eur-lex.europa.eu/, reused under Commission Decision
+2011/833/EU. Only the Official Journal is authentic. See
+`skills/eu-ai-act/NOTICE.md`.

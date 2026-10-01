@@ -40,7 +40,7 @@ class CheckUpdatesTests(unittest.TestCase):
 
     def test_tracking_file_is_valid(self):
         import json
-        data = json.loads((Path(__file__).resolve().parents[1] / "tracking.json").read_text())
+        data = json.loads((Path(__file__).resolve().parents[1] / "skills" / "eu-ai-act" / "tracking.json").read_text())
         for item in data["watch"]:
             dt.date.fromisoformat(item["last_reviewed"])
             self.assertTrue(item["url"].startswith("https://"))

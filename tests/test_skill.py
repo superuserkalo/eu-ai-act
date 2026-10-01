@@ -4,10 +4,26 @@ import re
 import unittest
 from pathlib import Path
 
-SKILL = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1]
+SKILL = ROOT / "skills" / "eu-ai-act"
 
 
 class SkillTests(unittest.TestCase):
+    def test_single_skill_and_manifest(self):
+        self.assertEqual(
+            sorted(path.parent.name for path in (ROOT / "skills").glob("*/SKILL.md")),
+            ["eu-ai-act"],
+        )
+        manifest = json.loads((ROOT / "plugin.json").read_text())
+        self.assertEqual(manifest["name"], "eu-ai-act")
+        self.assertEqual(manifest["repository"], "https://github.com/superuserkalo/eu-ai-act")
+        self.assertFalse(list(ROOT.glob("*/plugin.json")))
+
+    def test_license_ships_with_skill(self):
+        root = (ROOT / "LICENSE").read_text()
+        self.assertTrue(root.startswith("MIT License"))
+        self.assertEqual(root, (SKILL / "LICENSE").read_text())
+
     def test_frontmatter(self):
         text = (SKILL / "SKILL.md").read_text()
         self.assertTrue(text.startswith("---\n"))

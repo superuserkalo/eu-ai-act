@@ -1,4 +1,4 @@
-"""Refresh per-file sizes and SHA-256 hashes in SOURCE.json.
+"""Refresh per-file sizes and SHA-256 hashes in skills/eu-ai-act/SOURCE.json.
 
 Usage: python3 scripts/hash_sources.py
 Run after scripts/convert.py or after editing a plugin-authored reference.
@@ -8,15 +8,12 @@ import hashlib
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1] / "skills" / "eu-ai-act"
 GENERATED = ("references/articles", "references/annexes", "references/recitals")
 SUPPLEMENTS = (
     "references/catalog.md",
     "references/timeline.md",
     "references/builder-playbook.md",
-    "scripts/convert.py",
-    "scripts/check_updates.py",
-    "scripts/hash_sources.py",
 )
 
 
@@ -36,7 +33,7 @@ def main():
     texts.append(entry(ROOT / "references/index.md"))
     data["texts"] = texts
     data["supplements"] = [entry(ROOT / s) for s in SUPPLEMENTS]
-    data["generated_by"] = "scripts/convert.py <act.xhtml> references [<amending.xhtml> ...]"
+    data["generated_by"] = "scripts/convert.py <act.xhtml> skills/eu-ai-act/references [<amending.xhtml> ...]"
     source.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
     print(f"{len(texts)} texts, {len(SUPPLEMENTS)} supplements")
 

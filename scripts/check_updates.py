@@ -4,7 +4,7 @@ Usage: python3 scripts/check_updates.py [--today YYYY-MM-DD]
 
 Asks the Publications Office SPARQL endpoint for every act that amends,
 corrects, implements, or proposes to amend a bundled document, and reports
-any not listed in tracking.json. Corrections count only when an English
+any not listed in skills/eu-ai-act/tracking.json. Corrections count only when an English
 version exists. Also reports watch-list links that fail or are due for review.
 
 Exit code 0: nothing to do. 1: a report was printed. 2: the check itself failed.
@@ -17,7 +17,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+SKILL = Path(__file__).resolve().parents[1] / "skills" / "eu-ai-act"
 ENDPOINT = "https://publications.europa.eu/webapi/rdf/sparql"
 USER_AGENT = "eu-ai-act-skill-update-check"
 RELATIONS = {
@@ -126,7 +126,7 @@ def main(argv):
     today = dt.date.today()
     if "--today" in argv:
         today = dt.date.fromisoformat(argv[argv.index("--today") + 1])
-    tracking = json.loads((ROOT / "tracking.json").read_text())
+    tracking = json.loads((SKILL / "tracking.json").read_text())
     try:
         rows = sparql(tracking["bundled"])
     except OSError as err:

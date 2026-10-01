@@ -1,7 +1,7 @@
 ---
 name: eu-ai-act
 description: Use when building, changing, or reviewing software that uses AI and may be placed on the EU market or used in the EU, or when asked about EU AI Act scope, roles, prohibited practices, high-risk classification, transparency or labelling duties, general-purpose AI model obligations, deadlines, or fines. Classifies the system against the bundled official text of Regulation (EU) 2024/1689 as amended by Regulation (EU) 2026/1744, then turns the applicable obligations into code, tests, and documentation. GDPR, copyright, product liability, and non-EU AI laws fall outside this skill.
-license: Official EU legal texts, reusable with attribution under Commission Decision 2011/833/EU. See NOTICE.md.
+license: MIT for project-authored files; EU legal texts reused under Commission Decision 2011/833/EU. See LICENSE and NOTICE.md.
 metadata:
   source: Regulation (EU) 2024/1689 (Artificial Intelligence Act), as amended by Regulation (EU) 2026/1744
   version: "0.1.0"

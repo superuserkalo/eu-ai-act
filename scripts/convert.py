@@ -3,7 +3,7 @@ amendments into one Markdown file per Article, Annex, and Recital, with each
 2026 amendment quoted inside the file it changes. Standard library only.
 
 Usage:
-  python3 convert.py <act.xhtml> <references-dir> [<amending.xhtml> ...]
+  python3 scripts/convert.py <act.xhtml> skills/eu-ai-act/references [<amending.xhtml> ...]
 
 Pass amending acts oldest first. Each must contain an Article titled
 "Amendments to Regulation (EU) 2024/1689".

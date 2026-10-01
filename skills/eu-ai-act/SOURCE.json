@@ -17,7 +17,7 @@
       "title": "Regulation (EU) 2026/1744 (Digital Omnibus on AI)"
     }
   },
-  "generated_by": "scripts/convert.py <act.xhtml> references [<amending.xhtml> ...]",
+  "generated_by": "scripts/convert.py <act.xhtml> skills/eu-ai-act/references [<amending.xhtml> ...]",
   "language": "en",
   "retrieved": "2026-10-01",
   "reuse": "Commission Decision 2011/833/EU on the reuse of Commission documents; EUR-Lex legal notice",
@@ -36,21 +36,6 @@
       "bytes": 8440,
       "reference": "references/builder-playbook.md",
       "sha256": "7384cce52f3a05801e12dd28c644bd854a2740e3e326083fed846f85b5a473ae"
-    },
-    {
-      "bytes": 12450,
-      "reference": "scripts/convert.py",
-      "sha256": "63f4732e7dd3a1ff95530d0a4d00ce5b84e7b72d6e4c9e3ace210144d51675b3"
-    },
-    {
-      "bytes": 5362,
-      "reference": "scripts/check_updates.py",
-      "sha256": "2ce1102387c8534e10c28abe9a9fae2a1be3e44a6015adfe8a0c34e50bf41bee"
-    },
-    {
-      "bytes": 1430,
-      "reference": "scripts/hash_sources.py",
-      "sha256": "a6a479ee66d0f0583fb6bcd470833ef85c143d1e3122f2063f3f0de34893d752"
     }
   ],
   "texts": [
