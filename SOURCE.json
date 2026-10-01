@@ -1,0 +1,1618 @@
+{
+  "documents": {
+    "act": {
+      "celex": "32024R1689",
+      "eli": "http://data.europa.eu/eli/reg/2024/1689/oj",
+      "fetch": "https://publications.europa.eu/resource/celex/32024R1689",
+      "published": "2024-07-12",
+      "source_sha256": "8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+      "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act)"
+    },
+    "omnibus": {
+      "celex": "32026R1744",
+      "eli": "http://data.europa.eu/eli/reg/2026/1744/oj",
+      "fetch": "https://publications.europa.eu/resource/celex/32026R1744",
+      "published": "2026-07-24",
+      "source_sha256": "9d754652b867722807e4219c85912ce354233e58a1b4eb8c7752b4d1922993db",
+      "title": "Regulation (EU) 2026/1744 (Digital Omnibus on AI)"
+    }
+  },
+  "generated_by": "scripts/convert.py <act.xhtml> <omnibus.xhtml> references",
+  "language": "en",
+  "retrieved": "2026-10-01",
+  "reuse": "Commission Decision 2011/833/EU on the reuse of Commission documents; EUR-Lex legal notice",
+  "supplements": [
+    {
+      "bytes": 2747,
+      "reference": "references/catalog.md",
+      "sha256": "5e575a42b59bbb61d6b291751a98841b5e039e3771e7b52733a1f0f1f9159dc2"
+    },
+    {
+      "bytes": 3283,
+      "reference": "references/timeline.md",
+      "sha256": "2affbc4507e0eaa283519575780e9a15c943a6361c986852641a7b39d55d5bcb"
+    },
+    {
+      "bytes": 8440,
+      "reference": "references/builder-playbook.md",
+      "sha256": "7384cce52f3a05801e12dd28c644bd854a2740e3e326083fed846f85b5a473ae"
+    },
+    {
+      "bytes": 11095,
+      "reference": "scripts/convert.py",
+      "sha256": "24a193aa024eb8b6e5e7cf564d85006d2509755173c3ee5f73945c62642b539e"
+    }
+  ],
+  "texts": [
+    {
+      "bytes": 1647,
+      "reference": "references/articles/001.md",
+      "sha256": "5e1517833a995896acf53ec2bc5db201e8c542a43be6564b0d24b907f1fb4fe7"
+    },
+    {
+      "bytes": 7278,
+      "reference": "references/articles/002.md",
+      "sha256": "f9b92ea7d4d1a60168f6636b476bb49552c0d08b58baf5825f557cdd98008292"
+    },
+    {
+      "bytes": 18833,
+      "reference": "references/articles/003.md",
+      "sha256": "dcd7c9bfced3af3d62ae71f317fd2199a86089e2457dedde4e2d42c7bfc41a22"
+    },
+    {
+      "bytes": 2071,
+      "reference": "references/articles/004.md",
+      "sha256": "cdefc1f6f9dfc1f0e071f284fe07be2930c1caaa2ce6484594e9d978ffd633e1"
+    },
+    {
+      "bytes": 2957,
+      "reference": "references/articles/004a.md",
+      "sha256": "076b5bdcc93055eff9d24e3692080aaa0700dde7d2c989834f9f261b50134a3a"
+    },
+    {
+      "bytes": 13928,
+      "reference": "references/articles/005.md",
+      "sha256": "515264c5e1b1291208fb9e19538a779e7fb3041747d7622656c3d54009c12481"
+    },
+    {
+      "bytes": 5327,
+      "reference": "references/articles/006.md",
+      "sha256": "9425f3854682d113924223ccdae9e27c9ecc8ef65cb08774d29ba8b32c368f96"
+    },
+    {
+      "bytes": 3749,
+      "reference": "references/articles/007.md",
+      "sha256": "1df51b6d47b8803ad7b871af1ac12dc55dbedf2c4ff01233a5ece21b54fccd2f"
+    },
+    {
+      "bytes": 1427,
+      "reference": "references/articles/008.md",
+      "sha256": "c3ec5675f4180748bd46ffdea26134d9fad47fa8a5fc61f3b538b39821f62a29"
+    },
+    {
+      "bytes": 4319,
+      "reference": "references/articles/009.md",
+      "sha256": "9a0b8c66049c64fbb86301cf928e51e29112c9785986f01754fd46c9c8113b3b"
+    },
+    {
+      "bytes": 5616,
+      "reference": "references/articles/010.md",
+      "sha256": "3531bbbfa03f81ece893b6f88e756bb7b5f99d435e76857bc84b2b0e72e99a6b"
+    },
+    {
+      "bytes": 3284,
+      "reference": "references/articles/011.md",
+      "sha256": "f6adad504c0acdeb15482eff3223054a5753ad60cfb6e1fe4879beff71b825af"
+    },
+    {
+      "bytes": 1351,
+      "reference": "references/articles/012.md",
+      "sha256": "4676fd3af86f15df0c68500188b183eccd574a3b2d41f596cb533fdbd7cbaace"
+    },
+    {
+      "bytes": 3311,
+      "reference": "references/articles/013.md",
+      "sha256": "c9e552e97a61d26b73087e0ae8bb9dd6cd28b0e25f6ca9b17dbf80b4a1cd0bfd"
+    },
+    {
+      "bytes": 3314,
+      "reference": "references/articles/014.md",
+      "sha256": "b5413abb0154db7102fd487642cf0db572dbf5cff9a4f25700de9de7908d996e"
+    },
+    {
+      "bytes": 2554,
+      "reference": "references/articles/015.md",
+      "sha256": "54553d35ae7bef870f515e1b9f2b8eca0b0408a84d48e183fbdd3a386bd738d2"
+    },
+    {
+      "bytes": 1864,
+      "reference": "references/articles/016.md",
+      "sha256": "fef98e6f5104635dd6d1362603ce147de8844af6274de4ae28c11406a7713641"
+    },
+    {
+      "bytes": 4568,
+      "reference": "references/articles/017.md",
+      "sha256": "a7595d75377fc02de3a930579c71b0fad614f860c9810c12346a65b827cee5dd"
+    },
+    {
+      "bytes": 1481,
+      "reference": "references/articles/018.md",
+      "sha256": "437263500488ab93b095f11cd293cbf461f5529e2c0bf08388c439b1ecf5495e"
+    },
+    {
+      "bytes": 1050,
+      "reference": "references/articles/019.md",
+      "sha256": "9eaafcc7f64719babb0b73fa37f9d342c4971eb899ee036d0e06ad1f55e9ded6"
+    },
+    {
+      "bytes": 1328,
+      "reference": "references/articles/020.md",
+      "sha256": "52ca380ad3f169081c273387100880e8110d1f8b3aa5143d37ee89fb474b8af3"
+    },
+    {
+      "bytes": 1124,
+      "reference": "references/articles/021.md",
+      "sha256": "a6a37db45621362ef4885a033953d06253b3f6e9a6c3e12ceba2ad778408edad"
+    },
+    {
+      "bytes": 3302,
+      "reference": "references/articles/022.md",
+      "sha256": "66209a4263f4c0ed92d13af24bac8f88d9ea90bfb4e142121c6b3dc2695d14d2"
+    },
+    {
+      "bytes": 2818,
+      "reference": "references/articles/023.md",
+      "sha256": "1cfea11cfb13caa84ebb4cf4e8fc54749c236934e4308727b4334a35b8993904"
+    },
+    {
+      "bytes": 2843,
+      "reference": "references/articles/024.md",
+      "sha256": "e7a29ab9ff62192b48417bc203918b031e81e70e8bfa47016825bcb03490a5ad"
+    },
+    {
+      "bytes": 6688,
+      "reference": "references/articles/025.md",
+      "sha256": "3fb3d20089a558aba5332b91c0002c99f7a9d2469154587ef1d199ae1468464c"
+    },
+    {
+      "bytes": 7675,
+      "reference": "references/articles/026.md",
+      "sha256": "09ca1e3466912658861334ac84fd589723f5152caa45a83a8708b9f23cfabb59"
+    },
+    {
+      "bytes": 4501,
+      "reference": "references/articles/027.md",
+      "sha256": "6359bc8f77473d9567e17e78847953574b3e7d8ce409149f46b6747216aec645"
+    },
+    {
+      "bytes": 4691,
+      "reference": "references/articles/028.md",
+      "sha256": "872f159706f2219e3f76954b0ce7e19f17f4acd2f23ca21dd745b24630f3a5f1"
+    },
+    {
+      "bytes": 3034,
+      "reference": "references/articles/029.md",
+      "sha256": "371bbe41414dbe9ca83b22a0cab763df7c45698fd5668355bf225f2ac1a901ee"
+    },
+    {
+      "bytes": 3158,
+      "reference": "references/articles/030.md",
+      "sha256": "c7349c9373dc8ef5dc2dcdeea507a02430d67a6a41b4cca75fe40342b49ee274"
+    },
+    {
+      "bytes": 4446,
+      "reference": "references/articles/031.md",
+      "sha256": "33aaa366619e106dce78da859346d2d9aee9cfbf9da6ccb733022723a5119058"
+    },
+    {
+      "bytes": 619,
+      "reference": "references/articles/032.md",
+      "sha256": "839d7c3bca8a1c72b540253a0f5261414b3f76cb83e9f2a55b3646958219212c"
+    },
+    {
+      "bytes": 1094,
+      "reference": "references/articles/033.md",
+      "sha256": "1bbe6f7f8d6b152a7321dfc2a7a2e3ef02c22fa8879735cd514c109c128bd82d"
+    },
+    {
+      "bytes": 1322,
+      "reference": "references/articles/034.md",
+      "sha256": "8c41fca790a2d13f4923cdafb2b5694a7c97f7c189510f2b7c4274cee1d493b7"
+    },
+    {
+      "bytes": 616,
+      "reference": "references/articles/035.md",
+      "sha256": "119b29a01fec70cac88babd75afd31fab040cf9d517ca947b58709bf0a73490b"
+    },
+    {
+      "bytes": 6679,
+      "reference": "references/articles/036.md",
+      "sha256": "5dcf2c60b00f29972a4192a4fa71b37153955be11c7c619e3778bd3362ebad93"
+    },
+    {
+      "bytes": 1455,
+      "reference": "references/articles/037.md",
+      "sha256": "6dd8944d7cdd936175c103352cf5e097a813f8c612ceda1d1e530d0de2ac5fb6"
+    },
+    {
+      "bytes": 792,
+      "reference": "references/articles/038.md",
+      "sha256": "790b41b440d98a17fb73d2252e70cae940576433adfabc7edad04b2105390ea9"
+    },
+    {
+      "bytes": 533,
+      "reference": "references/articles/039.md",
+      "sha256": "ee4e59ec4873c358571a5be2c931ebd7ac08dd10968f8e632bb5f7d1ddfccda7"
+    },
+    {
+      "bytes": 4452,
+      "reference": "references/articles/040.md",
+      "sha256": "6f2daecb5448a4b76ea07e9f95b9fb9a09a8ce8418b6d88e481d77320f7b1b84"
+    },
+    {
+      "bytes": 4064,
+      "reference": "references/articles/041.md",
+      "sha256": "a3e61b81598103ebcbc5c78d29ab659d8e61e13b1d7f0712755c5403c2d0abfc"
+    },
+    {
+      "bytes": 1584,
+      "reference": "references/articles/042.md",
+      "sha256": "97762efecc84433f6a39fef63906d2582fc1d84db078697834be3776d9165d3a"
+    },
+    {
+      "bytes": 8462,
+      "reference": "references/articles/043.md",
+      "sha256": "286525cd54c38117cc79a3cb8f6407af45c397a21ee1d897fe0c30138a11f9ef"
+    },
+    {
+      "bytes": 1621,
+      "reference": "references/articles/044.md",
+      "sha256": "a3b266d4044ee7f1690cb905ca3fed5aa7fc216d2466c7ed1ef50ba125e5ac64"
+    },
+    {
+      "bytes": 1974,
+      "reference": "references/articles/045.md",
+      "sha256": "66ce32e6fe7df9388dbabba920d62b55b234d4518faf4eca58cedba602b39d8c"
+    },
+    {
+      "bytes": 3607,
+      "reference": "references/articles/046.md",
+      "sha256": "ff87a667bd49d853d2fbcefe510421e682bdf1df7ae326d8703e8c1d3b970f7b"
+    },
+    {
+      "bytes": 2080,
+      "reference": "references/articles/047.md",
+      "sha256": "30bfd1f5ac34301ce26bcae542987b08eb3713d51e8bb5738851ecc6e87b6169"
+    },
+    {
+      "bytes": 1577,
+      "reference": "references/articles/048.md",
+      "sha256": "52872bfe83abe8437d534b28b6a5e63728ae610a819eac0d7837933ffe03c7ef"
+    },
+    {
+      "bytes": 2164,
+      "reference": "references/articles/049.md",
+      "sha256": "aaddd0fec2c4cad3ad62ab5db4fe81976bc293db18f64eca3eef9d0f9c2f0bb3"
+    },
+    {
+      "bytes": 5911,
+      "reference": "references/articles/050.md",
+      "sha256": "8c009e5847abf6b99d4ae6b5ea00ea20e61ceb1adcd929af9e4619852234c956"
+    },
+    {
+      "bytes": 1390,
+      "reference": "references/articles/051.md",
+      "sha256": "8d7264bb6fc2643c33fc39faa70d11e1570f54d46bc5d3e0fe0b56fbcbad8d5e"
+    },
+    {
+      "bytes": 3113,
+      "reference": "references/articles/052.md",
+      "sha256": "d38ac72d4eda962f8081ae4b59a6ecc530faafdc45612d2511f207c1c8c62c84"
+    },
+    {
+      "bytes": 3712,
+      "reference": "references/articles/053.md",
+      "sha256": "e942cd20f27667d9027f86db45ee2535188d167399bf23f744d81adf768cf012"
+    },
+    {
+      "bytes": 2953,
+      "reference": "references/articles/054.md",
+      "sha256": "4e1aecdcf1119564738a9f31b14bac6753c834e42d2d25791f8cc02538469178"
+    },
+    {
+      "bytes": 2091,
+      "reference": "references/articles/055.md",
+      "sha256": "6fc44f9d8abb8f2aa0957933ebeb47bdbd771f6d9dd0d804bb36af0762a7806f"
+    },
+    {
+      "bytes": 5324,
+      "reference": "references/articles/056.md",
+      "sha256": "9f52eca0590c861dedf5aa671a1bf5643625bf95a15651b7798e2bfa86cf94cb"
+    },
+    {
+      "bytes": 13246,
+      "reference": "references/articles/057.md",
+      "sha256": "5a1aae9738dfc43a0aad60a639721373ec9586a8a826a00cfdf490cbfd5763b9"
+    },
+    {
+      "bytes": 5944,
+      "reference": "references/articles/058.md",
+      "sha256": "2daac0b82b4f4f652ba1962cfd08bb7942bd4b033f28dc6c872044ef9ae510ed"
+    },
+    {
+      "bytes": 4523,
+      "reference": "references/articles/059.md",
+      "sha256": "e2d7bedec47f0f2d9ba6e409b106ac29a304e474d4b1edbf17512675e24f9aaf"
+    },
+    {
+      "bytes": 9179,
+      "reference": "references/articles/060.md",
+      "sha256": "d7df9714d7d39841a9efb688084fd775882e26dcb05e9b175d04be9769fb2c05"
+    },
+    {
+      "bytes": 3168,
+      "reference": "references/articles/060a.md",
+      "sha256": "9a5d2b42b4fd4aeea9bf49f559c8408f92dbb46f4886397437318d03739a556c"
+    },
+    {
+      "bytes": 1657,
+      "reference": "references/articles/061.md",
+      "sha256": "277667aacd439e1cb69d9f5495c3119aa3d6886fe908a2a68219d2bd6cf44451"
+    },
+    {
+      "bytes": 2253,
+      "reference": "references/articles/062.md",
+      "sha256": "48e8f7fda78c92ab274435d144e2593ffce9892fcca27e52ce7eafeb556e9fca"
+    },
+    {
+      "bytes": 1948,
+      "reference": "references/articles/063.md",
+      "sha256": "617998480155d775a61bafef75abef8c2e4927f2221720e93a2e47ac01799f04"
+    },
+    {
+      "bytes": 880,
+      "reference": "references/articles/064.md",
+      "sha256": "a12c2e0768df6c21eedb0d4f1ef8e54081de747c58a4d1ed6384fb783efa1ff3"
+    },
+    {
+      "bytes": 3095,
+      "reference": "references/articles/065.md",
+      "sha256": "3d62c0006d7b6341bbff151845f5af2507e99f5ca05727d8edc1f284a2bf8c8f"
+    },
+    {
+      "bytes": 4721,
+      "reference": "references/articles/066.md",
+      "sha256": "921462d4794601c4e567eba4a3f7224f6ee321b291464049cc29e95c21febafb"
+    },
+    {
+      "bytes": 2097,
+      "reference": "references/articles/067.md",
+      "sha256": "2da1364508754c753c8809879ee69f73d772d0f1f4d1a729c09605e407adf5f2"
+    },
+    {
+      "bytes": 3286,
+      "reference": "references/articles/068.md",
+      "sha256": "bdb0aa53445694694636b63f9f18420f015662749f19a69032d5bfe09f5a74b8"
+    },
+    {
+      "bytes": 1641,
+      "reference": "references/articles/069.md",
+      "sha256": "2a2601850ed6ffd9b9d32a6ff81daa29e00bf3e3c7f245bb433c355fe7bd25f0"
+    },
+    {
+      "bytes": 4566,
+      "reference": "references/articles/070.md",
+      "sha256": "379ed0d8275264d6074f0e39dcac2b93e7edb99c28380907c38be4eef63f6f8b"
+    },
+    {
+      "bytes": 2415,
+      "reference": "references/articles/071.md",
+      "sha256": "78bdbb7e76a4656ff4b5e9d0f0703f2847b8fbbba1ed7ac8eec40c1801f74d16"
+    },
+    {
+      "bytes": 3172,
+      "reference": "references/articles/072.md",
+      "sha256": "d2c01661990fb3f3aa63ab247ca6c4a145b61518bac2ba219c60573922bb92a7"
+    },
+    {
+      "bytes": 4254,
+      "reference": "references/articles/073.md",
+      "sha256": "04a8913345e9e40c06cae21f060a3becee541aee6acf267ba73aadaf3ecf3803"
+    },
+    {
+      "bytes": 7228,
+      "reference": "references/articles/074.md",
+      "sha256": "a64399ba6a71b77c186153aa139e6e8fa9ad306a6199404e12e2320047a05fe1"
+    },
+    {
+      "bytes": 8827,
+      "reference": "references/articles/075.md",
+      "sha256": "307e4d2b28198e2f95fb7ba69ffb33e7ee28fe6fbc864ddafcc764083f2cd241"
+    },
+    {
+      "bytes": 8100,
+      "reference": "references/articles/075a.md",
+      "sha256": "e23e8d9f3a6701e84c7cecdf812ad3a2e3abd21fc43e9d513bc087556ce697c4"
+    },
+    {
+      "bytes": 1164,
+      "reference": "references/articles/075b.md",
+      "sha256": "98446c5d1b54bff8583f4c2ba61737ee428960d986eafe7a6aeb5e3fbae5cb1e"
+    },
+    {
+      "bytes": 5187,
+      "reference": "references/articles/075c.md",
+      "sha256": "339780eb1a751790cddf11aea61e8139ea13aa44d4b1b3bece047a945abb2080"
+    },
+    {
+      "bytes": 2136,
+      "reference": "references/articles/075d.md",
+      "sha256": "21c1406abff04220f94876227420c18f6625202d8e40a05d456cb7e481841e2d"
+    },
+    {
+      "bytes": 2799,
+      "reference": "references/articles/076.md",
+      "sha256": "7a27a43d80c716f972c11967902882a4f7ef036176c79f0aa6afa7b4499c16fe"
+    },
+    {
+      "bytes": 4257,
+      "reference": "references/articles/077.md",
+      "sha256": "87cec2fe7960ba962cd6d3c3652f030e2b52a12187f5416756a80290a17b0839"
+    },
+    {
+      "bytes": 3859,
+      "reference": "references/articles/078.md",
+      "sha256": "7502408908a7c28dfce667fc592b003c5adf947626dd0140979711c370af0165"
+    },
+    {
+      "bytes": 5487,
+      "reference": "references/articles/079.md",
+      "sha256": "658ed4f6adb6fb1977decd8da8e1f663297e8861a3cfcc8e04fbd4b5307afee2"
+    },
+    {
+      "bytes": 2901,
+      "reference": "references/articles/080.md",
+      "sha256": "b8c704bf5d21f4b7fc0e1d4ad9525908d049613a778a519283030851fa6fe9a6"
+    },
+    {
+      "bytes": 2182,
+      "reference": "references/articles/081.md",
+      "sha256": "e2c03c0e0cf494698337d0bada0f8a621bef52301f655ee733081b5518ce22a9"
+    },
+    {
+      "bytes": 2081,
+      "reference": "references/articles/082.md",
+      "sha256": "b7c071b260cb6c12a97343e80fe3697138fb96c7f4a8c457115d303a012ec03f"
+    },
+    {
+      "bytes": 1265,
+      "reference": "references/articles/083.md",
+      "sha256": "aa0d06333a9a595e594b1d9773840f53d0ef2b7d6f457da96ab557bcc5e0b016"
+    },
+    {
+      "bytes": 634,
+      "reference": "references/articles/084.md",
+      "sha256": "ac1ad6c16c98f89186d5991ab340fb8edb831dc6d7b498a685ffd1575db00e4f"
+    },
+    {
+      "bytes": 770,
+      "reference": "references/articles/085.md",
+      "sha256": "a01b8eb260a9828bcfc15189093a557fbf2314bfd7fa8395e927572d57826c48"
+    },
+    {
+      "bytes": 1144,
+      "reference": "references/articles/086.md",
+      "sha256": "fcca0fc221ddf40f35426c05d77e6a3b09f508e26de059437fb9f664bd064bc4"
+    },
+    {
+      "bytes": 386,
+      "reference": "references/articles/087.md",
+      "sha256": "d5110dd861c6876970d5c405cc763bb0d591d9f392ccfac09f6e98aa56bf8c99"
+    },
+    {
+      "bytes": 987,
+      "reference": "references/articles/088.md",
+      "sha256": "f74d6e7428043704498573e766380ba96d5e1d24fb6ea28680afd62874a6179a"
+    },
+    {
+      "bytes": 1248,
+      "reference": "references/articles/089.md",
+      "sha256": "3f6f2adbd7dcc5532a5974b611a19cf45f0b93a96bba0756956530862bfac487"
+    },
+    {
+      "bytes": 1298,
+      "reference": "references/articles/090.md",
+      "sha256": "298481e61eba20fb2173506d50593f2422b64fc99804c158c5581716ffdb6dc0"
+    },
+    {
+      "bytes": 1977,
+      "reference": "references/articles/091.md",
+      "sha256": "21539bbb5e8c0c8ded651508dda3071d285cdc41d9a261f91367665f16c9f190"
+    },
+    {
+      "bytes": 2607,
+      "reference": "references/articles/092.md",
+      "sha256": "a621338a4f99d4ad3f5e0bdfe6671420056453c34bd3ecc03c79e4b2d886b99e"
+    },
+    {
+      "bytes": 1218,
+      "reference": "references/articles/093.md",
+      "sha256": "4314d96b05497e4522b566aa76938ea82a371582f846e3e3e05d87a0520a16f6"
+    },
+    {
+      "bytes": 549,
+      "reference": "references/articles/094.md",
+      "sha256": "5ef797ea0939658f0a338b9865abde82c9c9605f817014b536637e32f9c8de64"
+    },
+    {
+      "bytes": 2967,
+      "reference": "references/articles/095.md",
+      "sha256": "a8c6781ab9529c9cc4fe0b9e962e05ce35499fb12fa58fc4cefc9364cc3e1acd"
+    },
+    {
+      "bytes": 3080,
+      "reference": "references/articles/096.md",
+      "sha256": "9513869561f949953c73b70855ccaa62bbdae7320759619184d095e5cde50adb"
+    },
+    {
+      "bytes": 5053,
+      "reference": "references/articles/097.md",
+      "sha256": "9aa322b19d622d243cb2e292ca0a46d30e94e390b4da85d6e8175875bf989c51"
+    },
+    {
+      "bytes": 388,
+      "reference": "references/articles/098.md",
+      "sha256": "96e6063534e25f3f21990f92f17165d1a07758dd916dad4824c4d542fe07c135"
+    },
+    {
+      "bytes": 6944,
+      "reference": "references/articles/099.md",
+      "sha256": "cb150ae510443580fb9222a45b8b5d6fb95edb135c137526cee5d34d5e0df3f8"
+    },
+    {
+      "bytes": 3592,
+      "reference": "references/articles/100.md",
+      "sha256": "102051930e9bc687fe841bd91ed78165c03b16ae3ca5339835a55e8dd6b8efaa"
+    },
+    {
+      "bytes": 2224,
+      "reference": "references/articles/101.md",
+      "sha256": "7dcc1072f1e17e512910d5b3198bfa263e5ca1bb6a6a4851ee5bad4de81c9e1e"
+    },
+    {
+      "bytes": 602,
+      "reference": "references/articles/102.md",
+      "sha256": "27669731eb85de12cfbae308d019f0125b78f2f426ae9647873add93d8e8a410"
+    },
+    {
+      "bytes": 569,
+      "reference": "references/articles/103.md",
+      "sha256": "71dae1cb39a4fb43586108bf663cb663b52c263bee7580f6ee9eba47bdfdc85a"
+    },
+    {
+      "bytes": 569,
+      "reference": "references/articles/104.md",
+      "sha256": "72beb8e518d92d6d8ad2effc465bce75cfff7df91451d3ed44b5ad6e319b3e6f"
+    },
+    {
+      "bytes": 652,
+      "reference": "references/articles/105.md",
+      "sha256": "1bde954f1e566ba0a6b2f983437d5ce82c608496f20d0816630276f8e8a08d45"
+    },
+    {
+      "bytes": 594,
+      "reference": "references/articles/106.md",
+      "sha256": "e538c4a5c62e515cdfa6242bbf04c55890d01bee8b8486eaf8f3848afd9a545e"
+    },
+    {
+      "bytes": 547,
+      "reference": "references/articles/107.md",
+      "sha256": "5a18299d3bdf3cf6da8eee6e346071b027f5a941444ecdab568316b3831e2933"
+    },
+    {
+      "bytes": 2774,
+      "reference": "references/articles/108.md",
+      "sha256": "02b5ba5c5341cd4c917774117edb7a957214f3d51a76861bfbb7931d5e9214cc"
+    },
+    {
+      "bytes": 559,
+      "reference": "references/articles/109.md",
+      "sha256": "8815ff3a812c9ff7195fafe6e81d85804e602550dd5de9635c2c10048116c7b3"
+    },
+    {
+      "bytes": 719,
+      "reference": "references/articles/110.md",
+      "sha256": "1a9dc11725e20c3af11b58e3d621b70f93f2385c0e039160e99a1ea9590ff6e1"
+    },
+    {
+      "bytes": 3080,
+      "reference": "references/articles/111.md",
+      "sha256": "5e01a3f93172a79a4dffd7f94bd95ac86743d583bf3286026966ff2d5c3d030e"
+    },
+    {
+      "bytes": 5742,
+      "reference": "references/articles/112.md",
+      "sha256": "9c63d2fc0fee6c2e3a6395fa4a36f25cae5aead8f11634c773fc39824e689222"
+    },
+    {
+      "bytes": 1717,
+      "reference": "references/articles/113.md",
+      "sha256": "c3cdb66562fb813c41eb3ddeeb51847bc2ea9ccc08d225132e5deda69205743d"
+    },
+    {
+      "bytes": 741,
+      "reference": "references/annexes/i.md",
+      "sha256": "a56bd03dadafbbd5b3ea8af4e9d276d6bf6ec25de780104d79e7d17fe8da54cf"
+    },
+    {
+      "bytes": 1005,
+      "reference": "references/annexes/ii.md",
+      "sha256": "d955937de9a7db780f55f26d35b6270a1e7c7a4b31f29a54c79fc2c5a1c88868"
+    },
+    {
+      "bytes": 7531,
+      "reference": "references/annexes/iii.md",
+      "sha256": "a4e18ff22e9a0e11c108d3bbc4c50374d0bac80a85898acf137eecfecc0beb8b"
+    },
+    {
+      "bytes": 5917,
+      "reference": "references/annexes/iv.md",
+      "sha256": "45822c94929a881ac5cc58d69816e8b3fff1072a65e84e6531c8a0fc902e216e"
+    },
+    {
+      "bytes": 973,
+      "reference": "references/annexes/ix.md",
+      "sha256": "d976ed01de3d908c82b7afb24378292bfda35eb06ac367ecf1ae46ed327cadf6"
+    },
+    {
+      "bytes": 1501,
+      "reference": "references/annexes/v.md",
+      "sha256": "27cdc4b65a57c4657b4421f98a59afbb53a20d92e2f800208241489f50575f96"
+    },
+    {
+      "bytes": 791,
+      "reference": "references/annexes/vi.md",
+      "sha256": "05f8081d2e97edf3c28402d29e21b271f802ed3e50f5d46ddce0ffb7bec15daa"
+    },
+    {
+      "bytes": 3787,
+      "reference": "references/annexes/vii.md",
+      "sha256": "310c8f49e0844506a133dc4a811a68357ae598fcdcf9449567bc129eeeebeffa"
+    },
+    {
+      "bytes": 4452,
+      "reference": "references/annexes/viii.md",
+      "sha256": "db7bb6a252b72ba28522cf52a30d95374567f2aa49b0fb9e29e2b079e98e78c0"
+    },
+    {
+      "bytes": 5417,
+      "reference": "references/annexes/x.md",
+      "sha256": "8f021f3b8d168fb281c61c652577d0957631c9d87949b69a2ad88d9b40860577"
+    },
+    {
+      "bytes": 2506,
+      "reference": "references/annexes/xi.md",
+      "sha256": "aacbb0c00d40ed40ee63bb3a728d9b0e7e29e599286f15d944ed33f513962832"
+    },
+    {
+      "bytes": 1648,
+      "reference": "references/annexes/xii.md",
+      "sha256": "454bc3e90b0e961d38efe8c1f744eac99fd4ef15b5aad1a90ec1a0ccdfc9872c"
+    },
+    {
+      "bytes": 1581,
+      "reference": "references/annexes/xiii.md",
+      "sha256": "aaa503de91c82573e7703c7cda5c9014ecf76d12b3da844fec55a0251a0b5c68"
+    },
+    {
+      "bytes": 3296,
+      "reference": "references/annexes/xiv.md",
+      "sha256": "db258b205c42bd613de120b1fa0c2e0258f113a4c3a11fb9aba26fc4558ad938"
+    },
+    {
+      "bytes": 1052,
+      "reference": "references/recitals/001.md",
+      "sha256": "26ecbdcde3a14a0697560ab162d77055e8d1b1656519f5315014cfbfe0e557ac"
+    },
+    {
+      "bytes": 396,
+      "reference": "references/recitals/002.md",
+      "sha256": "95d3b5b53a228884bd0f663d6056714366b01c514926af3a6f33662fd66d9bae"
+    },
+    {
+      "bytes": 1892,
+      "reference": "references/recitals/003.md",
+      "sha256": "91c1470c2bd32c88987821a65182be9e41b679b9691cd199dde6a104237bed42"
+    },
+    {
+      "bytes": 907,
+      "reference": "references/recitals/004.md",
+      "sha256": "4f11232c8128f79427264484dfffe087178c7a31995de07fbb50858b51e7e968"
+    },
+    {
+      "bytes": 415,
+      "reference": "references/recitals/005.md",
+      "sha256": "4a2b97f4b893de0ad813edf064aecbc8fd3d30d54c6a1a97903434ed33fd38c5"
+    },
+    {
+      "bytes": 567,
+      "reference": "references/recitals/006.md",
+      "sha256": "3c861d0d47ac89d976716201894da735166444a7f8daad05a714883f59ac3580"
+    },
+    {
+      "bytes": 623,
+      "reference": "references/recitals/007.md",
+      "sha256": "0e4a69b86253c7afbcafd7e1ecfa6b81d8c42f347174daf94a0851d570fc131f"
+    },
+    {
+      "bytes": 1569,
+      "reference": "references/recitals/008.md",
+      "sha256": "6b39b3e2da66121a3ed6158dfd92cefe22993329cc3a19f1f492c139ff84680d"
+    },
+    {
+      "bytes": 3126,
+      "reference": "references/recitals/009.md",
+      "sha256": "60dd7803f64fbc88a2b6608821a76b8f46072f969b1fdffa0e3d8f1729df5893"
+    },
+    {
+      "bytes": 1927,
+      "reference": "references/recitals/010.md",
+      "sha256": "89fd1da619041d149916cb30a27e065b6d587ad3742c4fe85b27a320c95f43bd"
+    },
+    {
+      "bytes": 284,
+      "reference": "references/recitals/011.md",
+      "sha256": "d8b4ffac96c7ce75dd370acbdb7638bce76987db18c44f37220347f443d27a01"
+    },
+    {
+      "bytes": 2717,
+      "reference": "references/recitals/012.md",
+      "sha256": "750b80eb9600b395cafadd6d22e5aa9433f53cfaad0e19e956264a7be23160d7"
+    },
+    {
+      "bytes": 466,
+      "reference": "references/recitals/013.md",
+      "sha256": "cab5f897c33c6c5f36587b6fd7e4f73e74857cd4bdcf4072aa9100a9f089e14f"
+    },
+    {
+      "bytes": 517,
+      "reference": "references/recitals/014.md",
+      "sha256": "3ad9677377072eea540a9518be0a764ebd766c5c2ade2b37395eec63d70b7e5b"
+    },
+    {
+      "bytes": 990,
+      "reference": "references/recitals/015.md",
+      "sha256": "bb5f68fb7accb1df3f5a00605973a69d496d33216be0be5aa5847683f86d95fb"
+    },
+    {
+      "bytes": 1538,
+      "reference": "references/recitals/016.md",
+      "sha256": "bb99184bf67af1bbb4a565a7bb87f048993a41a129cce3da30e447b8ea1c2a5c"
+    },
+    {
+      "bytes": 2381,
+      "reference": "references/recitals/017.md",
+      "sha256": "bc21c94b9308f8c180185379ef25c6dec27d10790d13014f64c906a3a45d98d9"
+    },
+    {
+      "bytes": 1060,
+      "reference": "references/recitals/018.md",
+      "sha256": "635c9b880a1ea470398960ca16068b3f5e523646205d1c4d05a5aa02743d0781"
+    },
+    {
+      "bytes": 2520,
+      "reference": "references/recitals/019.md",
+      "sha256": "28e124d94aac3ec2810ba1b8fe5dcaebcdf467f8768dbea0afa5af903c43d6fe"
+    },
+    {
+      "bytes": 1760,
+      "reference": "references/recitals/020.md",
+      "sha256": "88e5416fbc71b44cbb7f8c0554185cfdb82b55abedd7dae2e766b69ea1b95051"
+    },
+    {
+      "bytes": 452,
+      "reference": "references/recitals/021.md",
+      "sha256": "eae70242902f211a2f3564d953528d92b9290dd38451e6426b5a93ea3bfc4035"
+    },
+    {
+      "bytes": 2941,
+      "reference": "references/recitals/022.md",
+      "sha256": "4783e6bc09144059878737fe9a99395e48853c843e2ef36d2277465bce3e8d15"
+    },
+    {
+      "bytes": 209,
+      "reference": "references/recitals/023.md",
+      "sha256": "d2dd57cd8823090c6b67764ec9d7dbedb98fb28d05a044534ed270fe00d7e414"
+    },
+    {
+      "bytes": 2838,
+      "reference": "references/recitals/024.md",
+      "sha256": "04a222d05b8c0749c9cb664a924aa68fc71e3c6759156aceabc409793788137e"
+    },
+    {
+      "bytes": 1730,
+      "reference": "references/recitals/025.md",
+      "sha256": "1b784643fd86e72751cbe69c22e5dc8b11c94417431499f3705d5993dbe955b7"
+    },
+    {
+      "bytes": 580,
+      "reference": "references/recitals/026.md",
+      "sha256": "915879d88e870bc07b86b19a8c755e403f3585570394fd2ffe869c5be2c982b3"
+    },
+    {
+      "bytes": 3118,
+      "reference": "references/recitals/027.md",
+      "sha256": "144fa85f80e39da2692bc9ac8f10570776dae058a6ec0689d1c7b7ef02a3d105"
+    },
+    {
+      "bytes": 580,
+      "reference": "references/recitals/028.md",
+      "sha256": "fe22577ab6dca9ff873e8781d776f2ab7088a5b42b05f8aa806f7b459467439c"
+    },
+    {
+      "bytes": 3776,
+      "reference": "references/recitals/029.md",
+      "sha256": "df1da3f5ea0ba41bf238c7fa67a5ba4ff485ecd50c3251dd3d25a92f6a593aee"
+    },
+    {
+      "bytes": 696,
+      "reference": "references/recitals/030.md",
+      "sha256": "950d4f5ff404afc3336980af913eea89e802bbdd20d7156fa4e2b1b4e945f8ff"
+    },
+    {
+      "bytes": 1272,
+      "reference": "references/recitals/031.md",
+      "sha256": "50d5c3e46ea40bbb074586a2e8dfd133d1b4257702197d6409aef33745277d75"
+    },
+    {
+      "bytes": 1138,
+      "reference": "references/recitals/032.md",
+      "sha256": "321868735b243d9f43b93415852fe323389b7ae03f053296166af920363ec9dc"
+    },
+    {
+      "bytes": 3220,
+      "reference": "references/recitals/033.md",
+      "sha256": "ce6771168b9e3153495f7b1e2425ad461b8824cb4ee3fc4a4e376d357895beb0"
+    },
+    {
+      "bytes": 1466,
+      "reference": "references/recitals/034.md",
+      "sha256": "7b640584439baa260020562a4e1b60fae9aa396888dbca6e3fe0ee3242bef7a7"
+    },
+    {
+      "bytes": 2009,
+      "reference": "references/recitals/035.md",
+      "sha256": "10099c83bd0b139315f483deab05baa1ec8993e077095ac88f0d7f9cb651f821"
+    },
+    {
+      "bytes": 570,
+      "reference": "references/recitals/036.md",
+      "sha256": "cfeff02670f4dcc928f8327a38767cecf3016f78ce6e5aa2b7901c2866b340f7"
+    },
+    {
+      "bytes": 783,
+      "reference": "references/recitals/037.md",
+      "sha256": "7260e555fc847b1a1ca5d371cd7e1b58641cd58f216bd182519e6dfd54d369d8"
+    },
+    {
+      "bytes": 1718,
+      "reference": "references/recitals/038.md",
+      "sha256": "7a0db7b34a2a7014e7bdddc04f457e28d190fb60b15cd088285dfe51cae8d802"
+    },
+    {
+      "bytes": 948,
+      "reference": "references/recitals/039.md",
+      "sha256": "9e79734ea88fe79155b3436bcc1274b97da2f75aee16431dbeb2b9cf5cec0977"
+    },
+    {
+      "bytes": 1188,
+      "reference": "references/recitals/040.md",
+      "sha256": "411a9ec3e308d9a0aa2cac2655674d58f8d09f4e39a9287995998855daba5e73"
+    },
+    {
+      "bytes": 920,
+      "reference": "references/recitals/041.md",
+      "sha256": "17ce5f607f5cf8479900a366c8de05984c4ca1fd6021d3c619d26238afef818f"
+    },
+    {
+      "bytes": 1413,
+      "reference": "references/recitals/042.md",
+      "sha256": "f9a26611dae0d3c1f2f529a9e45324d6e210424ecbcf97e46874f9569314ef0d"
+    },
+    {
+      "bytes": 479,
+      "reference": "references/recitals/043.md",
+      "sha256": "bb7139cfefa203dd372a152ee9a7f397b0284e5b125b2b7dd0b218ebdb6905b1"
+    },
+    {
+      "bytes": 1291,
+      "reference": "references/recitals/044.md",
+      "sha256": "915ae1009a320493613663ca6261d4cf00693bcdd2177dc08fc21556b87549bc"
+    },
+    {
+      "bytes": 256,
+      "reference": "references/recitals/045.md",
+      "sha256": "e955b8292012e6e9721c7e98ce2ceb0f526be7b3ef3296761f749ab916d61642"
+    },
+    {
+      "bytes": 1835,
+      "reference": "references/recitals/046.md",
+      "sha256": "3d5508988841627d190571a1e052b302697d3dd2031b8f98a29d8bdeea92bb12"
+    },
+    {
+      "bytes": 1033,
+      "reference": "references/recitals/047.md",
+      "sha256": "d8977ac07fdb04cba3fcc1cf046d4192f9904f1bd5ec7bc7c3757f17a194c1df"
+    },
+    {
+      "bytes": 1499,
+      "reference": "references/recitals/048.md",
+      "sha256": "1ee103b2d61ddeb6fb21a3597b3f691e3314afe3c4d5aa44c79ec9b131b95fa3"
+    },
+    {
+      "bytes": 1315,
+      "reference": "references/recitals/049.md",
+      "sha256": "f73d01a7edbf7a7be6c3d409d11bb337283443460492b4799c6af458b36ed372"
+    },
+    {
+      "bytes": 866,
+      "reference": "references/recitals/050.md",
+      "sha256": "317661335f39187997714cb22ba7662ab04365ca8d9069add334e47fa193aa12"
+    },
+    {
+      "bytes": 582,
+      "reference": "references/recitals/051.md",
+      "sha256": "a00d19758c00ade674536db6580ac04fb0131bb535f5815264c16c84999700b2"
+    },
+    {
+      "bytes": 943,
+      "reference": "references/recitals/052.md",
+      "sha256": "9d88b7cf0abe5939241609dca8918d2089047ac14d0f07817d3a0523b2d5aa93"
+    },
+    {
+      "bytes": 4512,
+      "reference": "references/recitals/053.md",
+      "sha256": "a5d8cc1e046a4290c4e9ba26e494d6a2afb63df8addbaaa4af2d267b2747507d"
+    },
+    {
+      "bytes": 1683,
+      "reference": "references/recitals/054.md",
+      "sha256": "3f608f8774d0441acbccd23aa81913b511775858fb97e22afdbe331bcc9d9105"
+    },
+    {
+      "bytes": 1395,
+      "reference": "references/recitals/055.md",
+      "sha256": "18254cc01c12d24741bcc07e7e12fb08244bd1e1081ca5892143986a1dac4dc5"
+    },
+    {
+      "bytes": 1521,
+      "reference": "references/recitals/056.md",
+      "sha256": "526aac4ce51ebd2a88ea31a4eeaabc54eca2d9bffc9f6a40e8584fc6e1ccc9e9"
+    },
+    {
+      "bytes": 1398,
+      "reference": "references/recitals/057.md",
+      "sha256": "3f71de662e527764b90177960c1b68bc79e3e84ea7600dd71ec99d3ad635b805"
+    },
+    {
+      "bytes": 3324,
+      "reference": "references/recitals/058.md",
+      "sha256": "96a2be7b40fa71dd23805620e544fe1b3c16de3378c7b033c9f0f95fc1ea7442"
+    },
+    {
+      "bytes": 3246,
+      "reference": "references/recitals/059.md",
+      "sha256": "74a44cc13e45ae3c62573c1541277536f398d90e640714225af978e801d5f7f8"
+    },
+    {
+      "bytes": 2604,
+      "reference": "references/recitals/060.md",
+      "sha256": "5b683ac3c88326d083f138e6feb9e99fb57c3c1dbc03c13867a8de4a50d664d0"
+    },
+    {
+      "bytes": 1463,
+      "reference": "references/recitals/061.md",
+      "sha256": "60d85bae10f3d0df47ff045ea7dabe88d83ce67bc04239b46f93de4747c44f49"
+    },
+    {
+      "bytes": 825,
+      "reference": "references/recitals/062.md",
+      "sha256": "876ca7114c9728c346189241056f813f1989872fdd2b46ed6ce0469f6cbad1cd"
+    },
+    {
+      "bytes": 895,
+      "reference": "references/recitals/063.md",
+      "sha256": "ef4c9b95948eaf6061810af830d4743d2f184d5852ea02bb574a244eb3b4c9d3"
+    },
+    {
+      "bytes": 2832,
+      "reference": "references/recitals/064.md",
+      "sha256": "b67d2b137903f342ab9a435ca3208d69e37eadc665c23d48509255ca265d9b09"
+    },
+    {
+      "bytes": 2529,
+      "reference": "references/recitals/065.md",
+      "sha256": "9927f996e99bb046189248fca3c008366229f2d05ccecb0bfe93f914308b3c01"
+    },
+    {
+      "bytes": 597,
+      "reference": "references/recitals/066.md",
+      "sha256": "81a86082ec039f5a2017e60a250d3ecb8187baa61db26125f125dd8b4d650e29"
+    },
+    {
+      "bytes": 2869,
+      "reference": "references/recitals/067.md",
+      "sha256": "e9da25515d6e536775e40c3f681cbf72d1371c8d3f5c621a67343244b1044008"
+    },
+    {
+      "bytes": 1263,
+      "reference": "references/recitals/068.md",
+      "sha256": "e2ab171adb6f7d6d65ca588d6580c5777491ae7bdfdbf41bf0d1579ab1fc0328"
+    },
+    {
+      "bytes": 802,
+      "reference": "references/recitals/069.md",
+      "sha256": "c9c47c1e138555ae78900883a8661b05ce346ecfb4a2a39eb6dbfb414bf4d60a"
+    },
+    {
+      "bytes": 897,
+      "reference": "references/recitals/070.md",
+      "sha256": "de911aa963dc4f9e8fc963e746538fbaf9c0635fca1fda95135f935e805c82dd"
+    },
+    {
+      "bytes": 1173,
+      "reference": "references/recitals/071.md",
+      "sha256": "f500ed576215a15e2e6b643d41a88041c77ea147ec610deeadfb6ca1265bedbc"
+    },
+    {
+      "bytes": 2355,
+      "reference": "references/recitals/072.md",
+      "sha256": "f910cb083595c03c352496bdc72fc96328cda9c4b80ca6877905fbb3011fce03"
+    },
+    {
+      "bytes": 2123,
+      "reference": "references/recitals/073.md",
+      "sha256": "129bbbdcd99c22230796bcfa5785f0a3c7b45214a43bfaa44472b5d7c764f9ad"
+    },
+    {
+      "bytes": 1411,
+      "reference": "references/recitals/074.md",
+      "sha256": "0dd88ea07ffd022dabd6c41fc4b91f7b4cc27e30f35c81a0137355486b000e13"
+    },
+    {
+      "bytes": 1081,
+      "reference": "references/recitals/075.md",
+      "sha256": "e85251a00ba700cd080f686fee0524791b389012513fd4d4f34e5adeb2ad858f"
+    },
+    {
+      "bytes": 850,
+      "reference": "references/recitals/076.md",
+      "sha256": "f5f4b76a4f0f2f5e8780a11433a8d2b5a59eeb12f8d3df3c759f47a16c92c099"
+    },
+    {
+      "bytes": 1647,
+      "reference": "references/recitals/077.md",
+      "sha256": "4d0401d81ab471bc12b8421b9b0ddf60fb2aac5beb9d4fa9f2190ec904e7fedd"
+    },
+    {
+      "bytes": 1941,
+      "reference": "references/recitals/078.md",
+      "sha256": "67285e0af555910a3e324a331d6abac905d62badc94a3e12bccd0fb205dc7d52"
+    },
+    {
+      "bytes": 360,
+      "reference": "references/recitals/079.md",
+      "sha256": "690d8b5b3815be5b7a95a1a86ebc4c6d26a57c9cf8a5ba12a750566dae52981d"
+    },
+    {
+      "bytes": 1254,
+      "reference": "references/recitals/080.md",
+      "sha256": "0cc2a3f1aa6f20a853a66c52019609733a09ead42da4284972b603e859e14fd8"
+    },
+    {
+      "bytes": 1205,
+      "reference": "references/recitals/081.md",
+      "sha256": "02cd69d534b70f4e2555672476edcbad05893521367f6623ef9741e95a024f87"
+    },
+    {
+      "bytes": 910,
+      "reference": "references/recitals/082.md",
+      "sha256": "56244097bca855456749e0b90d1471e27b1db1d524da595d18985b43a4bee945"
+    },
+    {
+      "bytes": 760,
+      "reference": "references/recitals/083.md",
+      "sha256": "4c1574d8b82fd5c4ef74801edfbb31c1a43d49ac4fd906571ea07fd54b021be9"
+    },
+    {
+      "bytes": 1683,
+      "reference": "references/recitals/084.md",
+      "sha256": "6bd7036c0d9fc92a72efd96b43ba24d44007e2c8f9d5f726a50dd9c63da95df7"
+    },
+    {
+      "bytes": 766,
+      "reference": "references/recitals/085.md",
+      "sha256": "f7aafa81f027dff7a92c7f5ed44dd8c6bbb958461355fef6b63d3173d0f8319d"
+    },
+    {
+      "bytes": 760,
+      "reference": "references/recitals/086.md",
+      "sha256": "b40be1d61228095cdc14dcbf356f2cb342ff5ab0a1db959874b278146c57229d"
+    },
+    {
+      "bytes": 601,
+      "reference": "references/recitals/087.md",
+      "sha256": "07dfd818ca6c4237c5044850936d9b704d6e58abc5d086695ddded436bb23a37"
+    },
+    {
+      "bytes": 978,
+      "reference": "references/recitals/088.md",
+      "sha256": "6e6639760ce1d26711d41e066ea05608bd4d225434561c9bef14b9c183763702"
+    },
+    {
+      "bytes": 848,
+      "reference": "references/recitals/089.md",
+      "sha256": "c5accd6e69caa2aa2ca5c2581df32c0d2fca584e2f8f0477552193292b821961"
+    },
+    {
+      "bytes": 544,
+      "reference": "references/recitals/090.md",
+      "sha256": "e00ccde0467b177cbe71147b1b1c328dd897303eae709d6f8fe4c5b0d25ec46e"
+    },
+    {
+      "bytes": 1127,
+      "reference": "references/recitals/091.md",
+      "sha256": "1fc5f51eb292e8b9566fc90426c151d32144e18955e4d220df5a03796e397a9d"
+    },
+    {
+      "bytes": 944,
+      "reference": "references/recitals/092.md",
+      "sha256": "651141b95851ee8b97a4cffbe427120ffcefe0c2e3360d2ccd6dd580bb9f8456"
+    },
+    {
+      "bytes": 1444,
+      "reference": "references/recitals/093.md",
+      "sha256": "1ae6c6124f096a3648d259adf4a3001412dd9daa36938c5978b843c4a02c133d"
+    },
+    {
+      "bytes": 672,
+      "reference": "references/recitals/094.md",
+      "sha256": "ee7df94a1e5a8f5d535a7e8aa10677b4d9b95a295507b30240504de5339cb53c"
+    },
+    {
+      "bytes": 1009,
+      "reference": "references/recitals/095.md",
+      "sha256": "c4e03b031338fce1a76a06a59470f56e855cec0e4ad40d2c925b108aff1de46b"
+    },
+    {
+      "bytes": 3229,
+      "reference": "references/recitals/096.md",
+      "sha256": "4327363ed6069d1caa4460490ff4bd5617aa84db2b707a9402283b2c26dec5e3"
+    },
+    {
+      "bytes": 2553,
+      "reference": "references/recitals/097.md",
+      "sha256": "6fb550035765c7f5f1e93c5272288a9d7472593ddbc16a73f8856d2630d2d70a"
+    },
+    {
+      "bytes": 401,
+      "reference": "references/recitals/098.md",
+      "sha256": "7d6ab0de96f081999ada0ede5a9748c399f330066420bde10405d07ada51fffe"
+    },
+    {
+      "bytes": 324,
+      "reference": "references/recitals/099.md",
+      "sha256": "e8a4d9aef518594d96db4b09beadcd0bdd6035c31f17b6f0b318fbf9cef680b8"
+    },
+    {
+      "bytes": 407,
+      "reference": "references/recitals/100.md",
+      "sha256": "9cf1602696345f0de9f7a8ec50fafc54209e46a9b6b28263ebd417eb624997ac"
+    },
+    {
+      "bytes": 1218,
+      "reference": "references/recitals/101.md",
+      "sha256": "41e36d0c01b1f2a11c66ada9c02fe819558dd46706d30a4cadd339fe50cc67df"
+    },
+    {
+      "bytes": 1022,
+      "reference": "references/recitals/102.md",
+      "sha256": "f9c042c69714cd3b6264760b6eb0b2e4b20b0abcf155b76a1056cb74002e425e"
+    },
+    {
+      "bytes": 1015,
+      "reference": "references/recitals/103.md",
+      "sha256": "549575fab3980867e9452823cf6fcb8524e744b821ac49b84135d5722e802113"
+    },
+    {
+      "bytes": 1456,
+      "reference": "references/recitals/104.md",
+      "sha256": "6c65d3dcc743f42575282cc596d4a4dcd9d4383daee7c922d221eae4a1105380"
+    },
+    {
+      "bytes": 1460,
+      "reference": "references/recitals/105.md",
+      "sha256": "7934d77bbbcde51268ef4cffd90fc5e6df9a76e03e35f33ddad360dbf1f2170a"
+    },
+    {
+      "bytes": 995,
+      "reference": "references/recitals/106.md",
+      "sha256": "6ddea1843adeb0f21eb998c8b0a81a591453bf0ad94c4fa89f322ef59b352285"
+    },
+    {
+      "bytes": 1154,
+      "reference": "references/recitals/107.md",
+      "sha256": "e2c4825702ac00f8e3fa88897cd843f9ffaa62933a564c59c729c7ad798b4a27"
+    },
+    {
+      "bytes": 584,
+      "reference": "references/recitals/108.md",
+      "sha256": "517553c08aa0de408145009522c40a7f3fbf600bc58ff86252c01aba4a5d4eb0"
+    },
+    {
+      "bytes": 1131,
+      "reference": "references/recitals/109.md",
+      "sha256": "efe9635a57432923f7332bd6346ab0af97d6452c06042be3f8f0a8bffc17c85b"
+    },
+    {
+      "bytes": 2095,
+      "reference": "references/recitals/110.md",
+      "sha256": "922a8db5ef90d78b347de357250c5c36f2f5681dc05faea178108b886ef19d6d"
+    },
+    {
+      "bytes": 3243,
+      "reference": "references/recitals/111.md",
+      "sha256": "6f8bb2a0ea0a8fc3e80315c89b8669bfb735e7971a12ff560db1fdf2b154fb1f"
+    },
+    {
+      "bytes": 1717,
+      "reference": "references/recitals/112.md",
+      "sha256": "34ad49181d2486625296739b296bd578e08dda4995def0d934d98d5c0f8a1452"
+    },
+    {
+      "bytes": 671,
+      "reference": "references/recitals/113.md",
+      "sha256": "bd94af2cae3074639c78239f1b341b3e2fd36efa77378c266a4a9b9aea9697fe"
+    },
+    {
+      "bytes": 1185,
+      "reference": "references/recitals/114.md",
+      "sha256": "8ad314f0f43f1f3aabd6f64ba44b3503c5d0bdc623635cb9a5672e56db0a9783"
+    },
+    {
+      "bytes": 1382,
+      "reference": "references/recitals/115.md",
+      "sha256": "fd7aecfa7c0fa5a25ddb6c5de888bee42180b1a91ac0f103e46f7739f525a661"
+    },
+    {
+      "bytes": 1107,
+      "reference": "references/recitals/116.md",
+      "sha256": "54d9a8fc1dda578ab9df5eb34bae1ae027f7e668b2f9957fa7351a6b1023fafb"
+    },
+    {
+      "bytes": 1162,
+      "reference": "references/recitals/117.md",
+      "sha256": "790473fc986fe30b098e3fcf0fde162ebabc28c24fb8a178964bfb3cedc2913c"
+    },
+    {
+      "bytes": 1367,
+      "reference": "references/recitals/118.md",
+      "sha256": "cccc0af21f7d9a982e14252cf4011a844487486f1bb37c54057037b2f9b77c01"
+    },
+    {
+      "bytes": 855,
+      "reference": "references/recitals/119.md",
+      "sha256": "5a986b6f92ec91fcdfd1fa4defdcb0f5543a80664fe4122dacf7323e726c3f4a"
+    },
+    {
+      "bytes": 824,
+      "reference": "references/recitals/120.md",
+      "sha256": "25037899cfa308a26471d9780a081c69b25de0f9a570c710376ac15f0644704c"
+    },
+    {
+      "bytes": 2332,
+      "reference": "references/recitals/121.md",
+      "sha256": "5c03209dff294389e5370ac8e20735f81172efa8a5edb1d0495234e7ece6635d"
+    },
+    {
+      "bytes": 1247,
+      "reference": "references/recitals/122.md",
+      "sha256": "5ca0bca37b3ebb7086e63af488c6894772735bd1ea25dc3b554f692c6dada5f2"
+    },
+    {
+      "bytes": 266,
+      "reference": "references/recitals/123.md",
+      "sha256": "1c4a9bd654af98eda554179411de91a65b8c179fa4971386ed06895817e0cd18"
+    },
+    {
+      "bytes": 697,
+      "reference": "references/recitals/124.md",
+      "sha256": "031052eabcfbd25ca133e67c914cdeeb8a12a1aaad6758479fa9a155b1925339"
+    },
+    {
+      "bytes": 908,
+      "reference": "references/recitals/125.md",
+      "sha256": "ec412d04e2e19bb7be1a93f63ea7833fa266347949f37580f7377861fa98af78"
+    },
+    {
+      "bytes": 684,
+      "reference": "references/recitals/126.md",
+      "sha256": "a01cbb9826e28c1e2241eb1bdc1307f1dd1b11f8374de4ce1c36ee6588785817"
+    },
+    {
+      "bytes": 780,
+      "reference": "references/recitals/127.md",
+      "sha256": "e7042000c787e05dfa37e113352bf5a4e9313346f8f54d7a357abd0fde881967"
+    },
+    {
+      "bytes": 946,
+      "reference": "references/recitals/128.md",
+      "sha256": "f8f3b6495186692d120a987779e46f4460e3eec3362e602bad41e8c9f274f993"
+    },
+    {
+      "bytes": 672,
+      "reference": "references/recitals/129.md",
+      "sha256": "8c6deea8929dda7ff833b83fa7f3a1e8fce933e5ce7e8ef358c67f5c98f96ec2"
+    },
+    {
+      "bytes": 986,
+      "reference": "references/recitals/130.md",
+      "sha256": "db69c4dbe99039f5a90e8fb1d2d184f14f930957fe53ffa83cc28917fea81198"
+    },
+    {
+      "bytes": 2811,
+      "reference": "references/recitals/131.md",
+      "sha256": "4ecbe352ce741350928a032b66d62c8436773b0d2ff1a0dbc5e0c233ddf24295"
+    },
+    {
+      "bytes": 1581,
+      "reference": "references/recitals/132.md",
+      "sha256": "41f10c24d100255b608515ebb20ea3fba3acb3a1875e12b6666c76f05f8b05a2"
+    },
+    {
+      "bytes": 2096,
+      "reference": "references/recitals/133.md",
+      "sha256": "943829fa38d108f6b8df2dbb3d9263f9e243d40cf765b8399fa9b06ae4ac5e64"
+    },
+    {
+      "bytes": 1811,
+      "reference": "references/recitals/134.md",
+      "sha256": "f7e75fed9265c9e65c49d64c96b79407788f175456c44c44b9fc977ead253299"
+    },
+    {
+      "bytes": 731,
+      "reference": "references/recitals/135.md",
+      "sha256": "23041a37fb218405533a13654e547f1e0d61652426abae612ba22a28b0c9a07b"
+    },
+    {
+      "bytes": 1319,
+      "reference": "references/recitals/136.md",
+      "sha256": "ec9b74db75f6118122fef7e20ace808cd2cf4ee5abb7c9c03c6609b4ac980a8a"
+    },
+    {
+      "bytes": 442,
+      "reference": "references/recitals/137.md",
+      "sha256": "aa7b9ea92fbbcb1215a15fc050b7b5b0da381f3a05aac40b5ad442556db2b281"
+    },
+    {
+      "bytes": 1351,
+      "reference": "references/recitals/138.md",
+      "sha256": "4b33fcb13a06daf09b4ed50ceada73023b375ea7330cb6d44116affef9be2569"
+    },
+    {
+      "bytes": 3356,
+      "reference": "references/recitals/139.md",
+      "sha256": "180b02b5cc0e8998814cca4b00597e7a51a3eb7bee31ef281b030ff3a7af8ac1"
+    },
+    {
+      "bytes": 1362,
+      "reference": "references/recitals/140.md",
+      "sha256": "c4a1b0f9c64e9eaeeb0e4cc44352c6cc930b4718cb0daac94efc1465a5dcff6c"
+    },
+    {
+      "bytes": 2827,
+      "reference": "references/recitals/141.md",
+      "sha256": "61946622a9fa9daafd1e8c5df03e2af8d82d975f62d3e5c120bc1e4de38b177e"
+    },
+    {
+      "bytes": 917,
+      "reference": "references/recitals/142.md",
+      "sha256": "1a16f7bafce4cf6ee125f71c59d93a1d9a1ab7df4dbc7fb645dacee404cfbc8a"
+    },
+    {
+      "bytes": 3352,
+      "reference": "references/recitals/143.md",
+      "sha256": "0c4e6292b2e8f68b545feacb1f18efd7d1afc87e14079b982a09a328d00b6fcd"
+    },
+    {
+      "bytes": 413,
+      "reference": "references/recitals/144.md",
+      "sha256": "e363d99b59aba62d4ce2df5d87c7014aa401be2812b1d68d2f2505ec64bd8189"
+    },
+    {
+      "bytes": 856,
+      "reference": "references/recitals/145.md",
+      "sha256": "0156a1157e07939b4310c9e783c7a1001d1b7eae04115ee8c7d7a0db708cb9f6"
+    },
+    {
+      "bytes": 721,
+      "reference": "references/recitals/146.md",
+      "sha256": "228b5b64807d19db8c6baa4e385e26b0fa03155588a6708b9ea5f2968feae601"
+    },
+    {
+      "bytes": 640,
+      "reference": "references/recitals/147.md",
+      "sha256": "c994c6df09a7be4bdf301866ffdafbb1cfc69e13a6e4c7fdad6db48d6249c831"
+    },
+    {
+      "bytes": 1590,
+      "reference": "references/recitals/148.md",
+      "sha256": "816827c867238f4176af522e7812a18d1fe72cefd041b299189b1b2a566142e1"
+    },
+    {
+      "bytes": 2279,
+      "reference": "references/recitals/149.md",
+      "sha256": "0740c7d05f79102fd1a522eb5caf4e46f69167179804c8998cb6918bf784ffd6"
+    },
+    {
+      "bytes": 861,
+      "reference": "references/recitals/150.md",
+      "sha256": "2314cba4af03957a59d805f881ea94ffd0c453f692f85c0b552946a900f9ea9f"
+    },
+    {
+      "bytes": 873,
+      "reference": "references/recitals/151.md",
+      "sha256": "ec472c59feed2c2f930f747234d7fb14efe6dee598b1a8c282d866f0d5bbc1cd"
+    },
+    {
+      "bytes": 282,
+      "reference": "references/recitals/152.md",
+      "sha256": "d726a30ea66b59f1c3f2afa2320fb2fc9d053dc631f0ccc4d2f67f593c7a693a"
+    },
+    {
+      "bytes": 945,
+      "reference": "references/recitals/153.md",
+      "sha256": "ca2d223e498e2eef28dc3df5feaed2a05e37cdb1330ed17fc5c429b967b99ff2"
+    },
+    {
+      "bytes": 491,
+      "reference": "references/recitals/154.md",
+      "sha256": "53ce130421ab291ec46032982abe268cc305b372805610aa95567b5e289b6df3"
+    },
+    {
+      "bytes": 1365,
+      "reference": "references/recitals/155.md",
+      "sha256": "088c7d74c9f580cf032ef2555e54a017fa61d1d1a6247a8abbffe1913e25c217"
+    },
+    {
+      "bytes": 1423,
+      "reference": "references/recitals/156.md",
+      "sha256": "662f50484d0062e751b924ab825a4da1430861df5d9f597840a297c99cc5a25f"
+    },
+    {
+      "bytes": 1072,
+      "reference": "references/recitals/157.md",
+      "sha256": "ee03210a73f1aef2e3e2549d412410bdd850d6a5a097dd8d6ed4534b0f550a3a"
+    },
+    {
+      "bytes": 3367,
+      "reference": "references/recitals/158.md",
+      "sha256": "22091f81aa946e9ae479a692c67d1c94a038f0fed029f19b1f7ba9d345e989f9"
+    },
+    {
+      "bytes": 1075,
+      "reference": "references/recitals/159.md",
+      "sha256": "82318ab05830b46a4817949436db12f5ea75fa21442354125e70d051b36d7537"
+    },
+    {
+      "bytes": 789,
+      "reference": "references/recitals/160.md",
+      "sha256": "2bd62ee404718fec661cd7a25fae6bce5676637a8ebc075546082523aaadf207"
+    },
+    {
+      "bytes": 1513,
+      "reference": "references/recitals/161.md",
+      "sha256": "804ccee2d163e3d05e1ef380f0c6f55efd5c6cb0bc54800c1464d77a333c3218"
+    },
+    {
+      "bytes": 985,
+      "reference": "references/recitals/162.md",
+      "sha256": "b6bc6f74df49ee713d9a1698bda7135f86b094de48ae6872139b6254d30ab793"
+    },
+    {
+      "bytes": 969,
+      "reference": "references/recitals/163.md",
+      "sha256": "610aed8436c5229d8d29f73c2792597e2a6ca4f1dd303348ca4213f8daffa7fd"
+    },
+    {
+      "bytes": 1380,
+      "reference": "references/recitals/164.md",
+      "sha256": "12316fd2a8d8ebebbf9385ed1be806131fe813055e6a26f9fa1cf4c5d09f4e2c"
+    },
+    {
+      "bytes": 2244,
+      "reference": "references/recitals/165.md",
+      "sha256": "0eb57cde93bf6b2b39135a9d8755ebcb1d52ecc194439d007ba36c80be7fe524"
+    },
+    {
+      "bytes": 477,
+      "reference": "references/recitals/166.md",
+      "sha256": "85028ecf27c7dc1f7eb0b2c04e18c551f9a9c299f24861c514802afce995b73e"
+    },
+    {
+      "bytes": 749,
+      "reference": "references/recitals/167.md",
+      "sha256": "8e281535e044defb2f1fa8db862094a0cf68ae328de2d060fabfaf19c22c4839"
+    },
+    {
+      "bytes": 1194,
+      "reference": "references/recitals/168.md",
+      "sha256": "53fb65610a6083889fddabe53569de431884014398370639bce31fc89dd2240b"
+    },
+    {
+      "bytes": 810,
+      "reference": "references/recitals/169.md",
+      "sha256": "9045ed368450c12b1c473a3ce5e3ea59875bb85acc0568a9c54d04a5d3fab033"
+    },
+    {
+      "bytes": 467,
+      "reference": "references/recitals/170.md",
+      "sha256": "b3de055ce03a816aee21ce8e6a3b1ec49891263c4fa54cfdf9b97691968559d6"
+    },
+    {
+      "bytes": 852,
+      "reference": "references/recitals/171.md",
+      "sha256": "8a3b3c71b2c3c8323c73d0aaee6a9a507ca7e67823664df4a64501b894ba9e4f"
+    },
+    {
+      "bytes": 395,
+      "reference": "references/recitals/172.md",
+      "sha256": "3d421653bdc0f8ccfc210d1aa13894d2f57c96e92991fa7ad6b010cf088546ac"
+    },
+    {
+      "bytes": 1794,
+      "reference": "references/recitals/173.md",
+      "sha256": "3c2850ccd1268458babba7323179c9bdc3c97c12a73ea02c2b68c7ebd92a00c7"
+    },
+    {
+      "bytes": 1480,
+      "reference": "references/recitals/174.md",
+      "sha256": "94efba8e527fe3f8c5e60859f7885ed2b373a8e7710b8c4b6d318f8fff64e16d"
+    },
+    {
+      "bytes": 341,
+      "reference": "references/recitals/175.md",
+      "sha256": "7048e58b7abeb4dfc0e8b1c74262c28c591fbd3550bfea0a446cd124a867a488"
+    },
+    {
+      "bytes": 908,
+      "reference": "references/recitals/176.md",
+      "sha256": "614a005cf842255656e5570810ee43a2c63b7293d3bc279ec82bfbab4ce3f05a"
+    },
+    {
+      "bytes": 1235,
+      "reference": "references/recitals/177.md",
+      "sha256": "dfed0511e102531b2445ed894b1b87fe49746772aaef2ae4d3eac260f6771d35"
+    },
+    {
+      "bytes": 249,
+      "reference": "references/recitals/178.md",
+      "sha256": "13405706f160369629294b2716dcc31acf0f28f840dedc131d509b4245035957"
+    },
+    {
+      "bytes": 1588,
+      "reference": "references/recitals/179.md",
+      "sha256": "3aa67e7ed0e455ec754823b7bcb690fac63302a27352790390eeeb0a57072247"
+    },
+    {
+      "bytes": 314,
+      "reference": "references/recitals/180.md",
+      "sha256": "3333a8827bb97fd62dcba92860887ba2a1846f25d5dfaab11e1635d02eca5f2b"
+    },
+    {
+      "bytes": 13636,
+      "reference": "references/index.md",
+      "sha256": "e774d4bb9006ec1f77c299d30544d01c2575d22d4caf37c83fbe46a162e44e31"
+    }
+  ]
+}
