@@ -22,7 +22,7 @@ Engineering guidance, not legal advice.
 
 ## Layout
 
-![Repository shape: the installable skill in skills/eu-ai-act (SKILL.md, references, SOURCE.json and tracking.json) and repository-only tooling (plugin.json, scripts, tests, update workflow)](assets/repository-shape.png)
+![Repository shape and flows: the installable skill folder (SKILL.md, hand-written references, generated Articles, Annexes and Recitals, provenance files), repository-only tooling (scripts, tests, evals, plugin.json), and three flows: text refresh, weekly update check, and eval runs](assets/repository-shape.png)
 
 
 The installable skill is `skills/eu-ai-act/`:
