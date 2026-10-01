@@ -1,0 +1,165 @@
+{
+  "01-support-chatbot": {
+    "roles": [
+      "provider",
+      "deployer"
+    ],
+    "tier": "transparency",
+    "must_cite": [
+      "50(1)",
+      "4"
+    ],
+    "must_not": [
+      "high-risk",
+      "GPAI model provider",
+      "prohibited"
+    ],
+    "key_points": [
+      "Disclose AI interaction at first interaction; human-like persona 'Mia' defeats the 'obvious' exception",
+      "Applies now (from 2 Aug 2026)"
+    ]
+  },
+  "02-image-generator": {
+    "roles": [
+      "provider",
+      "deployer"
+    ],
+    "tier": "transparency plus prohibition risk",
+    "must_cite": [
+      "50(2)",
+      "5(1)(ba)",
+      "111(4)"
+    ],
+    "must_not": [
+      "high-risk"
+    ],
+    "key_points": [
+      "Machine-readable marking of image and video outputs",
+      "Face-swap of identifiable people: safeguards against non-consensual intimate imagery, Art. 5(1a), from 2 Dec 2026; prompt-only NSFW filter likely inadequate",
+      "Placed on market before 2 Aug 2026, so Art. 50(2) by 2 Dec 2026",
+      "Deep-fake disclosure duty falls on deployers who publish, Art. 50(4)"
+    ]
+  },
+  "03-cv-screening": {
+    "roles": [
+      "provider"
+    ],
+    "tier": "high-risk",
+    "must_cite": [
+      "6(2)",
+      "Annex III point 4(a)",
+      "9",
+      "10",
+      "14",
+      "43",
+      "49",
+      "113"
+    ],
+    "must_not": [
+      "6(3) derogation applies"
+    ],
+    "key_points": [
+      "Profiling of natural persons, so always high-risk; Art. 6(3) derogation unavailable",
+      "Applies from 2 Dec 2027",
+      "Customers are deployers with Art. 26 duties",
+      "Auto-reject undermines human oversight, Art. 14"
+    ]
+  },
+  "04-credit-scoring": {
+    "roles": [
+      "provider",
+      "deployer"
+    ],
+    "tier": "high-risk",
+    "must_cite": [
+      "Annex III point 5(b)",
+      "26",
+      "27",
+      "86"
+    ],
+    "must_not": [
+      "fraud model is high-risk"
+    ],
+    "key_points": [
+      "Credit model high-risk; fraud-detection model carved out of 5(b)",
+      "Fundamental rights impact assessment required for 5(b) deployers",
+      "Applies from 2 Dec 2027; legacy rule Art. 111(2) for systems already in service"
+    ]
+  },
+  "05-workplace-emotion": {
+    "roles": [
+      "deployer"
+    ],
+    "tier": "prohibited",
+    "must_cite": [
+      "5(1)(f)"
+    ],
+    "must_not": [
+      "proceed with integration"
+    ],
+    "key_points": [
+      "Emotion inference in the workplace is prohibited since 2 Feb 2025 unless for medical or safety reasons",
+      "Coaching and performance review are not medical or safety reasons",
+      "Stop and do not build"
+    ]
+  },
+  "06-internal-summarizer": {
+    "roles": [
+      "provider",
+      "deployer"
+    ],
+    "tier": "minimal plus Art. 50(2) marking",
+    "must_cite": [
+      "4",
+      "50(2)",
+      "3(11)"
+    ],
+    "must_not": [
+      "high-risk",
+      "50(1) applies",
+      "50(4) applies"
+    ],
+    "key_points": [
+      "AI literacy applies",
+      "Art. 50(2) has no internal-use exception: own-use provider must mark generated summaries, unless the 'no substantial alteration' exception covers summaries (uncertain)",
+      "Not published to inform the public, so no Art. 50(4)",
+      "Annex III 4(b) not triggered because not used to evaluate employees"
+    ],
+    "note": "Corrected after the 2026-10-01 run: the original key said only Art. 4 applied. The agent was right."
+  },
+  "07-open-weight-finetune": {
+    "roles": [
+      "provider of modified GPAI model"
+    ],
+    "tier": "GPAI model",
+    "must_cite": [
+      "53",
+      "53(2)",
+      "3(63)"
+    ],
+    "must_not": [
+      "fully exempt"
+    ],
+    "key_points": [
+      "Open-source exemption covers only 53(1)(a) and (b); copyright policy and training-content summary still apply",
+      "Whether a fine-tune makes you a provider depends on Commission GPAI guidelines (compute threshold), which are not bundled: flag as external dependency",
+      "Not systemic risk unless designated"
+    ]
+  },
+  "08-no-eu-nexus": {
+    "roles": [
+      "none"
+    ],
+    "tier": "out of scope",
+    "must_cite": [
+      "2(1)"
+    ],
+    "must_not": [
+      "obligations apply"
+    ],
+    "key_points": [
+      "No placing on EU market, no EU deployer, no output used in the EU: out of scope",
+      "Re-check if EU nexus changes"
+    ]
+  }
+}

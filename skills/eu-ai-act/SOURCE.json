@@ -33,9 +33,9 @@
       "sha256": "2affbc4507e0eaa283519575780e9a15c943a6361c986852641a7b39d55d5bcb"
     },
     {
-      "bytes": 9070,
+      "bytes": 9246,
       "reference": "references/builder-playbook.md",
-      "sha256": "58c2e3e6e032c5982d09702765da55efb0a9d3a79868031ac315a727ff0108da"
+      "sha256": "74e38766958662ef304944893b3966de22bfffc9d6a0cb089848c21bf618e97d"
     }
   ],
   "texts": [
