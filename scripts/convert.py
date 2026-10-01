@@ -3,7 +3,10 @@ amendments into one Markdown file per Article, Annex, and Recital, with each
 2026 amendment quoted inside the file it changes. Standard library only.
 
 Usage:
-  python3 convert.py <act.xhtml> <omnibus.xhtml> <references-dir>
+  python3 convert.py <act.xhtml> <references-dir> [<amending.xhtml> ...]
+
+Pass amending acts oldest first. Each must contain an Article titled
+"Amendments to Regulation (EU) 2024/1689".
 
 Fetch the inputs (EUR-Lex blocks scripted clients; Cellar does not):
   curl -sL -H "Accept: application/xhtml+xml" -H "Accept-Language: eng" \
@@ -22,7 +25,6 @@ from pathlib import Path
 
 NS = "{http://www.w3.org/1999/xhtml}"
 CHAPTERS = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII"]
-OMNIBUS = "Regulation (EU) 2026/1744"
 
 
 def text_of(el):
@@ -134,9 +136,23 @@ def split_articles(chapter_md):
         yield current
 
 
-def split_amendment_points(omnibus):
-    """Return Article 1 of the Omnibus as a list of (point, markdown)."""
-    md = to_markdown([omnibus["art_1"]])
+def amending_act(doc):
+    """Return (label, short, article number) for an act amending 2024/1689."""
+    full = " ".join(text_of(el) for el in doc.values() if el.get("class") == "oj-doc-ti")
+    m = re.search(r"(REGULATION|DIRECTIVE) \(EU\) (\d{4}/\d+)", full)
+    if not m:
+        raise ValueError("cannot read the amending act's number")
+    short = m.group(2)
+    label = f"{m.group(1).capitalize()} (EU) {short}"
+    for key, el in doc.items():
+        if re.fullmatch(r"art_\d+", key) and "Amendments to Regulation (EU) 2024/1689" in text_of(el):
+            return label, short, key[4:]
+    raise ValueError(f"{label} has no Article amending Regulation (EU) 2024/1689")
+
+
+def split_amendment_points(doc, article):
+    """Return one Article of an amending act as a list of (point, markdown)."""
+    md = to_markdown([doc[f"art_{article}"]])
     points, current = [], None
     for line in md.splitlines():
         m = re.match(r"- \((\d+)\) ", line)
@@ -174,18 +190,19 @@ def amendment_targets(text):
     raise ValueError(f"cannot place amending point: {first}")
 
 
-def amendment_block(point, text):
+def amendment_block(act, point, text):
+    label, short, article = act
     return (
-        f"## Amended by {OMNIBUS}, Article 1, point ({point})\n\n"
-        "In force from 27 July 2026. Check the application date in Article 113 as amended. "
-        "Where this amending text replaces, inserts, or deletes wording, it controls over "
-        "the 2024 text below.\n\n" + text.strip() + "\n"
+        f"## Amended by {label}, Article {article}, point ({point})\n\n"
+        "Check the application date in Article 113 as amended. Where this amending text "
+        "replaces, inserts, or deletes wording, it controls over the 2024 text below and "
+        "over any earlier amendment above it.\n\n" + text.strip() + "\n"
     )
 
 
-def main(act_src, omnibus_src, dest):
+def main(act_src, dest, *amending_srcs):
     dest = Path(dest)
-    act, omnibus = load(act_src), load(omnibus_src)
+    act = load(act_src)
 
     articles = {}  # key -> dict(title, location, body)
     for num in CHAPTERS:
@@ -198,34 +215,40 @@ def main(act_src, omnibus_src, dest):
         body = re.sub(r"^# ANNEX [IVX]+\n## .+\n", "", md).strip()
         annexes[num] = {"title": title, "body": body}
 
-    notes = {}  # (kind, key) -> [amendment blocks]
-    new_files = {}
-    for point, text in split_amendment_points(omnibus):
-        targets, inserted = amendment_targets(text)
-        for target in targets:
-            notes.setdefault(target, []).append(amendment_block(point, text))
-        for target, quoted in inserted.items():
-            new_files[target] = (point, quoted)
+    notes = {}  # (kind, key) -> [(short, block)], oldest act first
+    inserted = {}  # (kind, key) -> (act, point, quoted)
+    for src in amending_srcs:  # pass amending acts oldest first
+        doc = load(src)
+        meta = amending_act(doc)
+        for point, text in split_amendment_points(doc, meta[2]):
+            targets, new = amendment_targets(text)
+            for target in targets:
+                notes.setdefault(target, []).append((meta[1], amendment_block(meta, point, text)))
+            for target, quoted in new.items():
+                inserted[target] = (meta, point, quoted)
 
     files = {}
     for n, a in articles.items():
         parts = [f"# Article {n}: {a['title']}\n\n{a['location']}. Regulation (EU) 2024/1689.\n"]
-        parts += notes.get(("article", n), [])
+        parts += [block for _, block in notes.get(("article", n), [])]
         parts.append("## Text as published in 2024\n\n" + a["body"] + "\n")
         files[f"articles/{article_key(n)}.md"] = "\n".join(parts)
     for num, a in annexes.items():
         parts = [f"# Annex {num}: {a['title']}\n\nRegulation (EU) 2024/1689.\n"]
-        parts += notes.get(("annex", num), [])
+        parts += [block for _, block in notes.get(("annex", num), [])]
         parts.append("## Text as published in 2024\n\n" + a["body"] + "\n")
         files[f"annexes/{num.lower()}.md"] = "\n".join(parts)
-    for (kind, key), (point, quoted) in new_files.items():
+    for (kind, key), ((label, short, article), point, quoted) in inserted.items():
         name = f"articles/{article_key(key)}.md" if kind == "article" else f"annexes/{key.lower()}.md"
-        label = f"Article {key}" if kind == "article" else f"Annex {key}"
-        files[name] = (
-            f"# {label} (inserted by {OMNIBUS})\n\n"
-            f"Inserted by {OMNIBUS}, Article 1, point ({point}). In force from 27 July 2026. "
-            "Check the application date in Article 113 as amended.\n\n" + quoted.strip() + "\n"
-        )
+        title = f"Article {key}" if kind == "article" else f"Annex {key}"
+        parts = [
+            f"# {title} (inserted by {label})\n\n"
+            f"Inserted by {label}, Article {article}, point ({point}). "
+            "Check the application date in Article 113 as amended.\n"
+        ]
+        parts += [block for _, block in notes.get((kind, key), [])]
+        parts.append("## Text as inserted\n\n" + quoted.strip() + "\n")
+        files[name] = "\n".join(parts)
 
     recitals = to_markdown([act["pbl_1"]])
     for m in re.finditer(r"^- \((\d+)\) (.*?)(?=^- \(\d+\) |\Z)", recitals, re.MULTILINE | re.DOTALL):
@@ -234,7 +257,7 @@ def main(act_src, omnibus_src, dest):
             + m.group(2).strip() + "\n"
         )
 
-    files["index.md"] = build_index(articles, annexes, notes, new_files)
+    files["index.md"] = build_index(articles, annexes, notes, inserted)
     for name, text in files.items():
         path = dest / name
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -242,37 +265,37 @@ def main(act_src, omnibus_src, dest):
     print(f"{len(files)} files")
 
 
-def build_index(articles, annexes, notes, new_files):
+def build_index(articles, annexes, notes, inserted):
+    def mark(target):
+        acts = sorted({short for short, _ in notes.get(target, [])})
+        return f" (amended by {', '.join(acts)})" if acts else ""
+
     rows, location = [], None
-    keys = sorted(
-        list(articles) + [k for (kind, k) in new_files if kind == "article"],
-        key=article_key,
-    )
+    keys = sorted(list(articles) + [k for (kind, k) in inserted if kind == "article"], key=article_key)
     for n in keys:
         if n in articles:
             a = articles[n]
             if a["location"] != location:
                 location = a["location"]
                 rows.append(f"\n## {location}\n")
-            mark = " (amended 2026)" if ("article", n) in notes else ""
-            rows.append(f"- [Article {n}](articles/{article_key(n)}.md): {a['title']}{mark}")
+            rows.append(f"- [Article {n}](articles/{article_key(n)}.md): {a['title']}{mark(('article', n))}")
         else:
-            rows.append(f"- [Article {n}](articles/{article_key(n)}.md): inserted 2026")
+            short = inserted[("article", n)][0][1]
+            rows.append(f"- [Article {n}](articles/{article_key(n)}.md): inserted by {short}{mark(('article', n))}")
     rows.append("\n## Annexes\n")
     for num, a in annexes.items():
-        mark = " (amended 2026)" if ("annex", num) in notes else ""
-        rows.append(f"- [Annex {num}](annexes/{num.lower()}.md): {a['title']}{mark}")
-    for kind, key in new_files:
+        rows.append(f"- [Annex {num}](annexes/{num.lower()}.md): {a['title']}{mark(('annex', num))}")
+    for kind, key in inserted:
         if kind == "annex":
-            rows.append(f"- [Annex {key}](annexes/{key.lower()}.md): inserted 2026")
+            rows.append(f"- [Annex {key}](annexes/{key.lower()}.md): inserted by {inserted[(kind, key)][0][1]}")
     return (
         "# Article and Annex index\n\n"
-        "Generated by `scripts/convert.py`. One file per Article or Annex. Files marked "
-        "amended open with the 2026 amending text, then the 2024 text. "
+        "Generated by `scripts/convert.py`. One file per Article or Annex. Amended files open "
+        "with the amending text, oldest act first, then the 2024 text. "
         "Recitals: `recitals/NNN.md`, for example `recitals/012.md`.\n"
         + "\n".join(rows) + "\n"
     )
 
 
 if __name__ == "__main__":
-    main(*sys.argv[1:4])
+    main(*sys.argv[1:])

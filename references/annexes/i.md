@@ -4,7 +4,7 @@ Regulation (EU) 2024/1689.
 
 ## Amended by Regulation (EU) 2026/1744, Article 1, point (41)
 
-In force from 27 July 2026. Check the application date in Article 113 as amended. Where this amending text replaces, inserts, or deletes wording, it controls over the 2024 text below.
+Check the application date in Article 113 as amended. Where this amending text replaces, inserts, or deletes wording, it controls over the 2024 text below and over any earlier amendment above it.
 
 - (41) Annex I is amended as follows:
   - (a) in Section A, point 1 is deleted;

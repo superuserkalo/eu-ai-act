@@ -1,6 +1,8 @@
 # Annex XIV (inserted by Regulation (EU) 2026/1744)
 
-Inserted by Regulation (EU) 2026/1744, Article 1, point (43). In force from 27 July 2026. Check the application date in Article 113 as amended.
+Inserted by Regulation (EU) 2026/1744, Article 1, point (43). Check the application date in Article 113 as amended.
+
+## Text as inserted
 
 - (43) the following Annex is added:
 ## ‘Annex XIV

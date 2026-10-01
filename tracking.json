@@ -1,0 +1,69 @@
+{
+  "bundled": {
+    "32024R1689": "Regulation (EU) 2024/1689, base text",
+    "32026R1744": "Regulation (EU) 2026/1744, Digital Omnibus on AI"
+  },
+  "reviewed": {
+    "52025PC0836": "Digital Omnibus on AI proposal. Adopted as 32026R1744, which is bundled.",
+    "52025PC1023": "Medical devices simplification proposal, also amends 2024/1689. Not adopted when reviewed. If adopted, the act appears as a new amendment.",
+    "32025R0454": "Implementing Regulation on the scientific panel of independent experts. Governance only, no builder obligations. Not bundled.",
+    "32026R1755": "Implementing Regulation on Commission proceedings under 2024/1689. Procedure only. Not bundled."
+  },
+  "review_after_days": 90,
+  "watch": [
+    {
+      "name": "AI Act policy page (Commission)",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "why": "Index of guidelines, templates, and timelines",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "name": "Guidelines on the AI system definition",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application",
+      "why": "Interprets Article 3(1), used in classification step 1",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "name": "Guidelines on prohibited AI practices",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act",
+      "why": "Interprets Article 5",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "name": "Code of practice on marking and labelling AI-generated content",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+      "why": "May define adequate compliance with Article 50(2) and (4), per Article 50(7) as amended",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "name": "General-purpose AI code of practice",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "why": "Compliance route for Articles 53 and 55",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "name": "Guidelines for GPAI model providers",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers",
+      "why": "Scope of Chapter V obligations",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "name": "CEN-CENELEC JTC 21 harmonised standards",
+      "url": "https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/artificial-intelligence/",
+      "why": "Harmonised standards give presumption of conformity under Article 40",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "name": "AI Act Service Desk",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en",
+      "why": "Official FAQs and compliance tools",
+      "last_reviewed": "2026-10-01"
+    },
+    {
+      "name": "AI Office",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+      "why": "Templates, consultations, enforcement announcements",
+      "last_reviewed": "2026-10-01"
+    }
+  ]
+}

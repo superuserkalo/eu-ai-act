@@ -32,6 +32,7 @@ Engineering guidance, not legal advice.
   amending text quoted verbatim, then the 2024 text.
 - `scripts/convert.py`: regenerates the text from the Publications Office.
 - `SOURCE.json`: source documents and per-file hashes.
+- `tracking.json`: acts already bundled or reviewed, and the guidance watch list.
 
 One Article costs roughly 0.5k to 5k tokens to load.
 
@@ -48,6 +49,36 @@ git clone https://github.com/superuserkalo/eu-ai-act ~/.claude/skills/eu-ai-act
 ```sh
 python3 -m unittest discover -s tests -v
 ```
+
+## Staying current
+
+A GitHub Action (`.github/workflows/check-updates.yml`) runs every Monday and
+on demand. It runs `scripts/check_updates.py`, which:
+
+- asks the EU Publications Office for every act that amends, corrects,
+  implements, or proposes to amend the bundled text, and reports any not in
+  `tracking.json`. Corrections count only when an English version exists.
+- reports watch-list pages (guidelines, codes of practice, standards) that
+  fail to load or were last reviewed more than 90 days ago.
+
+When it finds something, it opens or comments on one issue titled
+"AI Act update check: action needed".
+
+To bundle a new amending act or English correction:
+
+```sh
+curl -sL -H "Accept: application/xhtml+xml" -H "Accept-Language: eng" \
+  https://publications.europa.eu/resource/celex/<CELEX> > new.xhtml
+python3 scripts/convert.py act.xhtml references omnibus.xhtml new.xhtml  # oldest first
+python3 scripts/hash_sources.py
+python3 -m unittest discover -s tests -v
+```
+
+Then update `references/timeline.md` and the playbook if dates or duties
+changed, add the act to `bundled` in `tracking.json` and to `documents` in
+`SOURCE.json`, and commit. For anything that needs no text change, add it to
+`reviewed` with a one-line reason. After reviewing a watched page, set its
+`last_reviewed` date.
 
 ## Sources and reuse
 

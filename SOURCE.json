@@ -17,7 +17,7 @@
       "title": "Regulation (EU) 2026/1744 (Digital Omnibus on AI)"
     }
   },
-  "generated_by": "scripts/convert.py <act.xhtml> <omnibus.xhtml> references",
+  "generated_by": "scripts/convert.py <act.xhtml> references [<amending.xhtml> ...]",
   "language": "en",
   "retrieved": "2026-10-01",
   "reuse": "Commission Decision 2011/833/EU on the reuse of Commission documents; EUR-Lex legal notice",
@@ -38,46 +38,56 @@
       "sha256": "7384cce52f3a05801e12dd28c644bd854a2740e3e326083fed846f85b5a473ae"
     },
     {
-      "bytes": 11095,
+      "bytes": 12450,
       "reference": "scripts/convert.py",
-      "sha256": "24a193aa024eb8b6e5e7cf564d85006d2509755173c3ee5f73945c62642b539e"
+      "sha256": "63f4732e7dd3a1ff95530d0a4d00ce5b84e7b72d6e4c9e3ace210144d51675b3"
+    },
+    {
+      "bytes": 5362,
+      "reference": "scripts/check_updates.py",
+      "sha256": "2ce1102387c8534e10c28abe9a9fae2a1be3e44a6015adfe8a0c34e50bf41bee"
+    },
+    {
+      "bytes": 1430,
+      "reference": "scripts/hash_sources.py",
+      "sha256": "a6a479ee66d0f0583fb6bcd470833ef85c143d1e3122f2063f3f0de34893d752"
     }
   ],
   "texts": [
     {
-      "bytes": 1647,
+      "bytes": 1659,
       "reference": "references/articles/001.md",
-      "sha256": "5e1517833a995896acf53ec2bc5db201e8c542a43be6564b0d24b907f1fb4fe7"
+      "sha256": "181f5ed9bd6a0cc107a535f2f8a18712cd976e7b5fcba72953d42f9f8e223914"
     },
     {
-      "bytes": 7278,
+      "bytes": 7302,
       "reference": "references/articles/002.md",
-      "sha256": "f9b92ea7d4d1a60168f6636b476bb49552c0d08b58baf5825f557cdd98008292"
+      "sha256": "5015a703929203109ddf089d4b6c34ea3b7597a15da047fcc687258e9366f971"
     },
     {
-      "bytes": 18833,
+      "bytes": 18845,
       "reference": "references/articles/003.md",
-      "sha256": "dcd7c9bfced3af3d62ae71f317fd2199a86089e2457dedde4e2d42c7bfc41a22"
+      "sha256": "521bc4cd388d579c3cf0a6960a2fcd88024fc6e87f6e939fc748c773c7c50b9a"
     },
     {
-      "bytes": 2071,
+      "bytes": 2083,
       "reference": "references/articles/004.md",
-      "sha256": "cdefc1f6f9dfc1f0e071f284fe07be2930c1caaa2ce6484594e9d978ffd633e1"
+      "sha256": "51154356f4f415faa2c2ee5d63703d85f64d42886ad34c6d47f8f64114f29731"
     },
     {
-      "bytes": 2957,
+      "bytes": 2950,
       "reference": "references/articles/004a.md",
-      "sha256": "076b5bdcc93055eff9d24e3692080aaa0700dde7d2c989834f9f261b50134a3a"
+      "sha256": "351def319fc3a603658a7b2c04a96e20898be705e410e851de65c531dd1cbd8d"
     },
     {
-      "bytes": 13928,
+      "bytes": 13940,
       "reference": "references/articles/005.md",
-      "sha256": "515264c5e1b1291208fb9e19538a779e7fb3041747d7622656c3d54009c12481"
+      "sha256": "a90d6e13b76ac89b6d75654be5fbdc8387bb85460f85eed4efe8228f89df8109"
     },
     {
-      "bytes": 5327,
+      "bytes": 5339,
       "reference": "references/articles/006.md",
-      "sha256": "9425f3854682d113924223ccdae9e27c9ecc8ef65cb08774d29ba8b32c368f96"
+      "sha256": "d999a28746ba9f07b21133b543e82c14b76ce0a8a3e962c3f1b3774f1be38d9a"
     },
     {
       "bytes": 3749,
@@ -95,14 +105,14 @@
       "sha256": "9a0b8c66049c64fbb86301cf928e51e29112c9785986f01754fd46c9c8113b3b"
     },
     {
-      "bytes": 5616,
+      "bytes": 5628,
       "reference": "references/articles/010.md",
-      "sha256": "3531bbbfa03f81ece893b6f88e756bb7b5f99d435e76857bc84b2b0e72e99a6b"
+      "sha256": "949e5b10272eecbc77561a5567ca6dc2fa2d831a69bb913a30736bc8e3c88aa1"
     },
     {
-      "bytes": 3284,
+      "bytes": 3296,
       "reference": "references/articles/011.md",
-      "sha256": "f6adad504c0acdeb15482eff3223054a5753ad60cfb6e1fe4879beff71b825af"
+      "sha256": "5688b085dbe92d4ed8750c5640c978e20dd2f3ff8b1f5be9a7cf7fd1715707d8"
     },
     {
       "bytes": 1351,
@@ -130,9 +140,9 @@
       "sha256": "fef98e6f5104635dd6d1362603ce147de8844af6274de4ae28c11406a7713641"
     },
     {
-      "bytes": 4568,
+      "bytes": 4580,
       "reference": "references/articles/017.md",
-      "sha256": "a7595d75377fc02de3a930579c71b0fad614f860c9810c12346a65b827cee5dd"
+      "sha256": "a8df7083d4f66a61fa6f8b629361e2277f0b7252f03059381a843d00011f90bd"
     },
     {
       "bytes": 1481,
@@ -170,9 +180,9 @@
       "sha256": "e7a29ab9ff62192b48417bc203918b031e81e70e8bfa47016825bcb03490a5ad"
     },
     {
-      "bytes": 6688,
+      "bytes": 6700,
       "reference": "references/articles/025.md",
-      "sha256": "3fb3d20089a558aba5332b91c0002c99f7a9d2469154587ef1d199ae1468464c"
+      "sha256": "ed360ea34b0c793c1c3cf8a36373c6e98bb905cd2a928ac6fccb081b99936b45"
     },
     {
       "bytes": 7675,
@@ -180,24 +190,24 @@
       "sha256": "09ca1e3466912658861334ac84fd589723f5152caa45a83a8708b9f23cfabb59"
     },
     {
-      "bytes": 4501,
+      "bytes": 4513,
       "reference": "references/articles/027.md",
-      "sha256": "6359bc8f77473d9567e17e78847953574b3e7d8ce409149f46b6747216aec645"
+      "sha256": "24eee777cbeb58f4dfe51cb6243120758891824170aaef2948ecd7d977a3e965"
     },
     {
-      "bytes": 4691,
+      "bytes": 4703,
       "reference": "references/articles/028.md",
-      "sha256": "872f159706f2219e3f76954b0ce7e19f17f4acd2f23ca21dd745b24630f3a5f1"
+      "sha256": "657c1d1e6203274dd1cdea2443bed828d678f812727b52a1578e854b4426fe25"
     },
     {
-      "bytes": 3034,
+      "bytes": 3046,
       "reference": "references/articles/029.md",
-      "sha256": "371bbe41414dbe9ca83b22a0cab763df7c45698fd5668355bf225f2ac1a901ee"
+      "sha256": "43f4aa5595d9e7d55af5d75db60946abfb449e4157906b11bc0016018cf7873b"
     },
     {
-      "bytes": 3158,
+      "bytes": 3170,
       "reference": "references/articles/030.md",
-      "sha256": "c7349c9373dc8ef5dc2dcdeea507a02430d67a6a41b4cca75fe40342b49ee274"
+      "sha256": "12b0a456c6117de338964978e291b2dbbfea6d771f003b51743ebfd27eee1f56"
     },
     {
       "bytes": 4446,
@@ -245,9 +255,9 @@
       "sha256": "ee4e59ec4873c358571a5be2c931ebd7ac08dd10968f8e632bb5f7d1ddfccda7"
     },
     {
-      "bytes": 4452,
+      "bytes": 4464,
       "reference": "references/articles/040.md",
-      "sha256": "6f2daecb5448a4b76ea07e9f95b9fb9a09a8ce8418b6d88e481d77320f7b1b84"
+      "sha256": "f2416131c76eb2a12f8b5ad62d42654aca78ac2a2cd4703ede7d2a92ba23fc11"
     },
     {
       "bytes": 4064,
@@ -255,14 +265,14 @@
       "sha256": "a3e61b81598103ebcbc5c78d29ab659d8e61e13b1d7f0712755c5403c2d0abfc"
     },
     {
-      "bytes": 1584,
+      "bytes": 1596,
       "reference": "references/articles/042.md",
-      "sha256": "97762efecc84433f6a39fef63906d2582fc1d84db078697834be3776d9165d3a"
+      "sha256": "8fb3cce8560711a49655a47f66696f5fcf5711807c01baf17cd6326fa8cc9296"
     },
     {
-      "bytes": 8462,
+      "bytes": 8474,
       "reference": "references/articles/043.md",
-      "sha256": "286525cd54c38117cc79a3cb8f6407af45c397a21ee1d897fe0c30138a11f9ef"
+      "sha256": "4706674b715d5186d015a319c27ba8115d4f87431c085eb76e8495af08f451ef"
     },
     {
       "bytes": 1621,
@@ -295,9 +305,9 @@
       "sha256": "aaddd0fec2c4cad3ad62ab5db4fe81976bc293db18f64eca3eef9d0f9c2f0bb3"
     },
     {
-      "bytes": 5911,
+      "bytes": 5923,
       "reference": "references/articles/050.md",
-      "sha256": "8c009e5847abf6b99d4ae6b5ea00ea20e61ceb1adcd929af9e4619852234c956"
+      "sha256": "9106d6369d1f3b33f6be51ae00abc738957fca309f8a23dce32cedd153846135"
     },
     {
       "bytes": 1390,
@@ -325,19 +335,19 @@
       "sha256": "6fc44f9d8abb8f2aa0957933ebeb47bdbd771f6d9dd0d804bb36af0762a7806f"
     },
     {
-      "bytes": 5324,
+      "bytes": 5336,
       "reference": "references/articles/056.md",
-      "sha256": "9f52eca0590c861dedf5aa671a1bf5643625bf95a15651b7798e2bfa86cf94cb"
+      "sha256": "ba6d46897d324ed4813a56bce9a28e692862ca52c5686db4226957bc701fdfb7"
     },
     {
-      "bytes": 13246,
+      "bytes": 13258,
       "reference": "references/articles/057.md",
-      "sha256": "5a1aae9738dfc43a0aad60a639721373ec9586a8a826a00cfdf490cbfd5763b9"
+      "sha256": "900cce62f8e08dd3d9de76d06cc5252be78b30cad5a50f63582636ac6b73d3eb"
     },
     {
-      "bytes": 5944,
+      "bytes": 5956,
       "reference": "references/articles/058.md",
-      "sha256": "2daac0b82b4f4f652ba1962cfd08bb7942bd4b033f28dc6c872044ef9ae510ed"
+      "sha256": "5c390067dcf36028d04a20320de7335480254b8502cbee36b063136693f4857c"
     },
     {
       "bytes": 4523,
@@ -345,14 +355,14 @@
       "sha256": "e2d7bedec47f0f2d9ba6e409b106ac29a304e474d4b1edbf17512675e24f9aaf"
     },
     {
-      "bytes": 9179,
+      "bytes": 9191,
       "reference": "references/articles/060.md",
-      "sha256": "d7df9714d7d39841a9efb688084fd775882e26dcb05e9b175d04be9769fb2c05"
+      "sha256": "032209658bd99f38cd9729b5dd3ec96279281135088c38c6fee0b0ce3db29937"
     },
     {
-      "bytes": 3168,
+      "bytes": 3161,
       "reference": "references/articles/060a.md",
-      "sha256": "9a5d2b42b4fd4aeea9bf49f559c8408f92dbb46f4886397437318d03739a556c"
+      "sha256": "1ac23938483375ebc905e0e62121217385522702214446022ffafa70f8ba0d79"
     },
     {
       "bytes": 1657,
@@ -365,14 +375,14 @@
       "sha256": "48e8f7fda78c92ab274435d144e2593ffce9892fcca27e52ce7eafeb556e9fca"
     },
     {
-      "bytes": 1948,
+      "bytes": 1960,
       "reference": "references/articles/063.md",
-      "sha256": "617998480155d775a61bafef75abef8c2e4927f2221720e93a2e47ac01799f04"
+      "sha256": "1c33422cbadf539c70853a87e7e4b1c2c0468f2f936c5e1add39b77e077c72cb"
     },
     {
-      "bytes": 880,
+      "bytes": 892,
       "reference": "references/articles/064.md",
-      "sha256": "a12c2e0768df6c21eedb0d4f1ef8e54081de747c58a4d1ed6384fb783efa1ff3"
+      "sha256": "35adf10320c6da53f3aa9d966ca49a80e7d996c2ea4cc3844fa6a3e4d72a0d63"
     },
     {
       "bytes": 3095,
@@ -395,14 +405,14 @@
       "sha256": "bdb0aa53445694694636b63f9f18420f015662749f19a69032d5bfe09f5a74b8"
     },
     {
-      "bytes": 1641,
+      "bytes": 1653,
       "reference": "references/articles/069.md",
-      "sha256": "2a2601850ed6ffd9b9d32a6ff81daa29e00bf3e3c7f245bb433c355fe7bd25f0"
+      "sha256": "37a2b62d13cede71299d815353b5db396e3e5091df3ad5628ac6f0a6c5b51371"
     },
     {
-      "bytes": 4566,
+      "bytes": 4578,
       "reference": "references/articles/070.md",
-      "sha256": "379ed0d8275264d6074f0e39dcac2b93e7edb99c28380907c38be4eef63f6f8b"
+      "sha256": "0a6dc0fb9560b2f2e682c01a3a91311bff177ad887c17b8ecc0b0c61ddc6f26c"
     },
     {
       "bytes": 2415,
@@ -410,9 +420,9 @@
       "sha256": "78bdbb7e76a4656ff4b5e9d0f0703f2847b8fbbba1ed7ac8eec40c1801f74d16"
     },
     {
-      "bytes": 3172,
+      "bytes": 3184,
       "reference": "references/articles/072.md",
-      "sha256": "d2c01661990fb3f3aa63ab247ca6c4a145b61518bac2ba219c60573922bb92a7"
+      "sha256": "af44f1c5d8d53b500c80886510c0652c0d77000b1b05cb877bfbac7d41098252"
     },
     {
       "bytes": 4254,
@@ -425,39 +435,39 @@
       "sha256": "a64399ba6a71b77c186153aa139e6e8fa9ad306a6199404e12e2320047a05fe1"
     },
     {
-      "bytes": 8827,
+      "bytes": 8839,
       "reference": "references/articles/075.md",
-      "sha256": "307e4d2b28198e2f95fb7ba69ffb33e7ee28fe6fbc864ddafcc764083f2cd241"
+      "sha256": "38af082bc9d47279d934639de62c89fc651890a959e6e5515d9c84236e8043e9"
     },
     {
-      "bytes": 8100,
+      "bytes": 8093,
       "reference": "references/articles/075a.md",
-      "sha256": "e23e8d9f3a6701e84c7cecdf812ad3a2e3abd21fc43e9d513bc087556ce697c4"
+      "sha256": "c4f79794592f2987dcc24a2321c99a66cacc6d105c6c0cae68f46305f4dee57d"
     },
     {
-      "bytes": 1164,
+      "bytes": 1157,
       "reference": "references/articles/075b.md",
-      "sha256": "98446c5d1b54bff8583f4c2ba61737ee428960d986eafe7a6aeb5e3fbae5cb1e"
+      "sha256": "7f8e6bc841d50c4c40c0cf1d57047e5a823e445ce154bebe23f58d14fc435c6b"
     },
     {
-      "bytes": 5187,
+      "bytes": 5180,
       "reference": "references/articles/075c.md",
-      "sha256": "339780eb1a751790cddf11aea61e8139ea13aa44d4b1b3bece047a945abb2080"
+      "sha256": "fda929b5baede46f9cfc5ee2bda4d4fb73a7b1e725be05b8598d8f320854d2a4"
     },
     {
-      "bytes": 2136,
+      "bytes": 2129,
       "reference": "references/articles/075d.md",
-      "sha256": "21c1406abff04220f94876227420c18f6625202d8e40a05d456cb7e481841e2d"
+      "sha256": "7f85148328bab4d07b22a659e84041e0d008bfb8e83f3da7e99a176f40d1c36a"
     },
     {
-      "bytes": 2799,
+      "bytes": 2811,
       "reference": "references/articles/076.md",
-      "sha256": "7a27a43d80c716f972c11967902882a4f7ef036176c79f0aa6afa7b4499c16fe"
+      "sha256": "eb38808bcc5a7f7e826eb95dfc73038bd3d3fad2977709872d18e24587f4dfeb"
     },
     {
-      "bytes": 4257,
+      "bytes": 4269,
       "reference": "references/articles/077.md",
-      "sha256": "87cec2fe7960ba962cd6d3c3652f030e2b52a12187f5416756a80290a17b0839"
+      "sha256": "88f689f8c724fdbfffdd88bd81c6c69394f669f691aa4f7f0b4253d908e8197b"
     },
     {
       "bytes": 3859,
@@ -545,19 +555,19 @@
       "sha256": "5ef797ea0939658f0a338b9865abde82c9c9605f817014b536637e32f9c8de64"
     },
     {
-      "bytes": 2967,
+      "bytes": 2979,
       "reference": "references/articles/095.md",
-      "sha256": "a8c6781ab9529c9cc4fe0b9e962e05ce35499fb12fa58fc4cefc9364cc3e1acd"
+      "sha256": "70851a9a38a3d6d382d2febc4ac3cc3523fdf2a4269e1c294c79432e95da0fbd"
     },
     {
-      "bytes": 3080,
+      "bytes": 3092,
       "reference": "references/articles/096.md",
-      "sha256": "9513869561f949953c73b70855ccaa62bbdae7320759619184d095e5cde50adb"
+      "sha256": "86ba358faef10d98db9f1a74cfd2ae36fd13658579008c592ca591d2c4141336"
     },
     {
-      "bytes": 5053,
+      "bytes": 5065,
       "reference": "references/articles/097.md",
-      "sha256": "9aa322b19d622d243cb2e292ca0a46d30e94e390b4da85d6e8175875bf989c51"
+      "sha256": "f4ad7b91be934da249237e47796d2e62c9c03fdc902bb271dab51f8435acbf86"
     },
     {
       "bytes": 388,
@@ -565,9 +575,9 @@
       "sha256": "96e6063534e25f3f21990f92f17165d1a07758dd916dad4824c4d542fe07c135"
     },
     {
-      "bytes": 6944,
+      "bytes": 6956,
       "reference": "references/articles/099.md",
-      "sha256": "cb150ae510443580fb9222a45b8b5d6fb95edb135c137526cee5d34d5e0df3f8"
+      "sha256": "6108b64e1ef71b70b8792c8635609cd7feb5eb962c01b3e8aa6f193111eb1017"
     },
     {
       "bytes": 3592,
@@ -625,9 +635,9 @@
       "sha256": "1a9dc11725e20c3af11b58e3d621b70f93f2385c0e039160e99a1ea9590ff6e1"
     },
     {
-      "bytes": 3080,
+      "bytes": 3092,
       "reference": "references/articles/111.md",
-      "sha256": "5e01a3f93172a79a4dffd7f94bd95ac86743d583bf3286026966ff2d5c3d030e"
+      "sha256": "6f1f84c77cbd44141bb76516ff7794d37518c07004a02aec8e830f3effc3c207"
     },
     {
       "bytes": 5742,
@@ -635,14 +645,14 @@
       "sha256": "9c63d2fc0fee6c2e3a6395fa4a36f25cae5aead8f11634c773fc39824e689222"
     },
     {
-      "bytes": 1717,
+      "bytes": 1729,
       "reference": "references/articles/113.md",
-      "sha256": "c3cdb66562fb813c41eb3ddeeb51847bc2ea9ccc08d225132e5deda69205743d"
+      "sha256": "c20e43744ad96cfadbf0f9f82fc6e6b6d11c475ecca53eb6ccf46aed144dac6c"
     },
     {
-      "bytes": 741,
+      "bytes": 753,
       "reference": "references/annexes/i.md",
-      "sha256": "a56bd03dadafbbd5b3ea8af4e9d276d6bf6ec25de780104d79e7d17fe8da54cf"
+      "sha256": "02062a70af1bb41c7647d73556a9e1255a6ee0a3a3bffe6eaa6c08e7ffa8159c"
     },
     {
       "bytes": 1005,
@@ -680,9 +690,9 @@
       "sha256": "310c8f49e0844506a133dc4a811a68357ae598fcdcf9449567bc129eeeebeffa"
     },
     {
-      "bytes": 4452,
+      "bytes": 4464,
       "reference": "references/annexes/viii.md",
-      "sha256": "db7bb6a252b72ba28522cf52a30d95374567f2aa49b0fb9e29e2b079e98e78c0"
+      "sha256": "48e1bbcdf71f41aecf4dea1ac50367d51af946335e4f9c56dc6180b7fe4e1821"
     },
     {
       "bytes": 5417,
@@ -705,9 +715,9 @@
       "sha256": "aaa503de91c82573e7703c7cda5c9014ecf76d12b3da844fec55a0251a0b5c68"
     },
     {
-      "bytes": 3296,
+      "bytes": 3289,
       "reference": "references/annexes/xiv.md",
-      "sha256": "db258b205c42bd613de120b1fa0c2e0258f113a4c3a11fb9aba26fc4558ad938"
+      "sha256": "4ce6091815dc6fd274b82cfac66f299aabf67d204c5827b0aec40e95bcab35d5"
     },
     {
       "bytes": 1052,
@@ -1610,9 +1620,9 @@
       "sha256": "3333a8827bb97fd62dcba92860887ba2a1846f25d5dfaab11e1635d02eca5f2b"
     },
     {
-      "bytes": 13636,
+      "bytes": 14002,
       "reference": "references/index.md",
-      "sha256": "e774d4bb9006ec1f77c299d30544d01c2575d22d4caf37c83fbe46a162e44e31"
+      "sha256": "0b5e6a258e0699afed17d3aacaef9a505ab022eea81929d09212d7d2e0a529a3"
     }
   ]
 }

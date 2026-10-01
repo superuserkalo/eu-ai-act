@@ -14,7 +14,7 @@ Classify the AI system from evidence, cite the Act for every obligation, and bui
 ## Rules that apply throughout
 
 - **Read one Article at a time.** Each Article is its own file: `references/articles/NNN.md`, zero-padded, for example `articles/050.md` or `articles/004a.md`. Annexes are `references/annexes/<roman>.md`. Find files through [the index](references/index.md). Do not load whole chapters.
-- **Amendments come first in the file.** An Article or Annex changed by Regulation (EU) 2026/1744 opens with the amending text, then the 2024 text. Where the amending text replaces, inserts, or deletes wording, it controls. Apply it to the 2024 text yourself and cite both, for example `Article 50(7) as replaced by 2026/1744`.
+- **Amendments come first in the file.** An Article or Annex changed by a later act opens with the amending text, oldest act first, then the 2024 text. Where amending text replaces, inserts, or deletes wording, it controls, and a later act controls over an earlier one. Apply it to the 2024 text yourself and cite both, for example `Article 50(7) as replaced by 2026/1744`.
 - **Check the date.** An obligation binds only from its application date. Use [the timeline](references/timeline.md) and state today's date next to every deadline you report.
 - **Classify the system, not the model vendor.** Calling a third-party model through an API does not make you a model provider. Putting your name on an AI system, or making it available to others, usually makes you a provider of that system. Read Article 3 and Article 25 before you decide.
 - **Facts over guesses.** If classification depends on a fact you cannot observe in the code or the conversation, such as the intended purpose, users, or EU nexus, ask the person. Do not assume the friendlier answer.
@@ -73,7 +73,7 @@ Report:
 - items that need counsel or a notified body, such as prohibited-practice edge cases, Article 6(3) reliance, third-party conformity assessment, or a fundamental rights impact assessment (Article 27).
 - the note that this is engineering guidance, not legal advice.
 
-Cite the Article, paragraph, and point, for example `Article 50(2)` or `Annex III, point 4(a)`. Label any conclusion that goes beyond the text as agent inference. Commission guidelines, codes of practice, harmonised standards, and national implementing law are not bundled. When one matters, name it as an external dependency and do not quote it from memory.
+Cite the Article, paragraph, and point, for example `Article 50(2)` or `Annex III, point 4(a)`. Label any conclusion that goes beyond the text as agent inference. Commission guidelines, codes of practice, harmonised standards, and national implementing law are not bundled. When one matters, name it as an external dependency and do not quote it from memory. The official pages for these are listed under `watch` in `tracking.json`.
 
 Read [source provenance](references/source-map.md) only when the person asks for the CELEX number, ELI, retrieval date, or hashes.
 
